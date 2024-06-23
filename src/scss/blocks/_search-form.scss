@@ -1,0 +1,53 @@
+.search-block {
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+
+.search-form{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 0;
+	transition: .2s; 
+	z-index: 3;
+}
+
+.search-form input {
+	height: 40px;
+	width: 0;
+	padding: 0;
+	transition: .2s;
+	background-color:$darkBg;
+	border: 1px solid $greyText;
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	caret-color: rgba(255, 255, 255, .6);
+	color: rgba(255, 255, 255, .6);
+}
+
+.search-form.active {
+	width: 280px;
+	input{
+		visibility: visible;
+		width: 280px;
+		padding-left: 16px;
+		padding-right: 50px;
+	}
+}
+
+.search-block button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 5;
+	background-color: none;
+	border: none;
+	width: 40px;
+	height: 40px;
+}

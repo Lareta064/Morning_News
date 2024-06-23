@@ -13,9 +13,15 @@ header.header
 				a(href="#!").location
 					svg.svg-pin
 						use( href='./img/spriteSvg.svg#svg-pin')
-				.header-search
-					svg.svg-search
-						use( href='./img/spriteSvg.svg#svg-search')
+
+				//=====SEARCH FORM =====
+				.search-block
+					form.search-form#search-form
+						input(type="text")
+						button.search-form-btn(type="button")
+							svg.svg-search
+								use( href='./img/spriteSvg.svg#svg-search')
+
 					
 	//=======HEADER CENTER ROW =====				
 	.header-center

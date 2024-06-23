@@ -1,0 +1,28 @@
+.header {
+	&-top, &-center, &-container{
+		display: flex;
+		align-items: center;
+	}
+	&-top {
+		height: 60px;
+		background-color: $darkBg;
+		color: white;
+		.header-container{justify-content: space-between;}
+	}
+	&-center{
+		height: 50px;
+		background-color: #fff;
+	}
+}
+.menu-toggle{margin-right: 15px;}
+.header-container{
+	width: min(1140px, 100%);
+	margin-inline: auto;
+	position: relative;
+
+	
+}
+.currency-wrapper{
+	display: flex;
+	align-items: center;
+}

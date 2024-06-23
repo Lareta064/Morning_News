@@ -1,0 +1,44 @@
+header.header
+	.header-top
+		.header-container
+			.flex-group
+				//=====burger=====
+				.menu-toggle#menu-toggle
+					span
+				//=====LOGO=====
+				a(href="#!").logo
+					img(src="./img/logo.webp", width="160" height="40" alt="logo")
+
+			.flex-group
+				a(href="#!").location
+					svg.svg-pin
+						use( href='./img/spriteSvg.svg#svg-pin')
+				.header-search
+					svg.svg-search
+						use( href='./img/spriteSvg.svg#svg-search')
+					
+	//=======HEADER CENTER ROW =====				
+	.header-center
+		.header-container
+			div.currency-wrapper
+				#USD $ 00,0000 руб.
+				#EUR € 00,0000 руб.
+			.swiper.header-menu-swiper
+				.swiper-wrapper
+					+header-menu([
+						{title: 'Home'},
+						{title: 'About Us'},
+						{title: 'Contacts'},
+						{title: 'Contacts'},
+						{title: 'Contacts'},
+						{title: 'Contacts'},
+						{title: 'Contacts'},
+						{title: 'Contacts'},
+						{title: 'Contacts'},
+						{title: 'Contacts'},
+						{title: 'Contacts'}
+					])
+			.header-swiper-nav
+				.swiper-button-next
+				.swiper-button-prev
+		

@@ -1,0 +1,17 @@
+mixin news-card(img, cat, title, txt,  w ='240', h ='135')
+	a(href="#!").news-card&attributes(attributes)
+		if img !==''
+			.news-card__img
+				img(src="./img/"+ img +".webp", width=""+ w height=""+ h alt="alt")
+		.news-card__body
+			span.news-card__cat #{cat}
+			.news-card__title  #{title}
+			if  txt
+				p !{txt}
+
+//- HEADER MENU ====
+mixin header-menu(arg)
+	each li in arg
+		.swiper-slide
+			a(href=(li.link ? ""+ li.link : '#!')) #{li.title}
+				

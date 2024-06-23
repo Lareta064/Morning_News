@@ -1,0 +1,25 @@
+*[class^="svg-"]{
+	display: inline-block;
+}
+.svg-search{
+	width: 24px;
+	height: 24px;
+	color: rgba(255, 255, 255, .6);
+	fill: transparent;
+	cursor:pointer;
+}
+.svg-pin{
+	width: 16px;
+	height: 20px;
+	color: rgba(255, 255, 255, .6);
+	transition: .3s; 
+	
+}
+.location{
+	width: 24px;
+	height: 24px;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	&:hover .svg-pin{color: rgba(255, 255, 255, 1);}
+}

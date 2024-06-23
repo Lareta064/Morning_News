@@ -1,0 +1,15 @@
+.aside-right{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 40px;
+}
+.grid-col-3{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap:40px;
+}
+.grid-col-4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}

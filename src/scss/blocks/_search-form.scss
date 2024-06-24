@@ -40,7 +40,7 @@
 	}
 }
 
-.search-block button {
+.search-block .search-form-btn {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -50,4 +50,5 @@
 	border: none;
 	width: 40px;
 	height: 40px;
+	&:hover svg{color: white}
 }

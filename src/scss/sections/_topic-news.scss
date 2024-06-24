@@ -1,0 +1,12 @@
+.topic-news{
+	border-top: 2px solid var(--sectionBorder);
+	padding-top: 30px;
+	&__title{
+		.h1{margin-bottom: 10px;}
+	}
+	&-img{
+		img{
+			aspect-ratio: 104/59;
+		}
+	}
+}

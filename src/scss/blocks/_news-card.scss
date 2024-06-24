@@ -16,8 +16,10 @@
 	}
 	&__body{
 		padding-top: 15px;
+		padding-inline:10px;
 		p{
 			font-size: 14px;
+			margin-top: 5px;
 		}
 	}
 	&__cat{
@@ -29,8 +31,7 @@
 		font-weight: 700;
 		font-size: 16px;
 		line-height: 1.4;
-		margin-bottom: 5px;
-		transition: .3s; 
+		transition:var(--transition); 
 	}
 	&:hover img{
 		transform: scale(1.08);

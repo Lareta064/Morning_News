@@ -1,6 +1,7 @@
 .news-slider{
 	position: relative;
 	overflow: hidden;
+	padding-bottom: 30px;
 	.swiper-slide{
 		@media (max-width: 1199px) {
 			width: 240px!important;

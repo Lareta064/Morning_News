@@ -1,6 +1,6 @@
 *[class^="svg-"]{
 	display: inline-block;
-	transition: .3s; 
+	transition:var(--transition); 
 }
 .svg-search{
 	width: 24px;
@@ -13,7 +13,7 @@
 	width: 16px;
 	height: 20px;
 	color: rgba(255, 255, 255, .6);
-	transition: .3s; 
+	transition:var(--transition); 
 	
 }
 .location{

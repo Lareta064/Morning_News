@@ -3,36 +3,30 @@ document.addEventListener('DOMContentLoaded', function() {
 	const searchForm = document.getElementById('search-form');/*  форма поиска */
 	if(searchForm){
 		const openSearchBtn = searchForm.querySelector('.search-form-btn');/* кнопка с лупой */
-		addActiveClass (openSearchBtn, searchForm );
+		const searchFormInput = searchForm.querySelector('.search-form-input');/* input */
+
+		addActiveClass (searchForm,  openSearchBtn, searchFormInput);
 	}
 	
 	/*====скрипт для формы поиска */
-	function addActiveClass ( clickedItem, changeItem ){
+	function addActiveClass ( parentBlock, clickedItem, changeItem ){
 		clickedItem.addEventListener('click', (e)=>{
-			
+			console.log('555');
 			if(clickedItem.classList.contains('active')){
-				
-				clickedItem.classList.remove('active');
-				 changeItem.classList.remove('active');
+				if(changeItem.value ==''){
+					clickedItem.classList.remove('active');
+					parentBlock.classList.remove('active');
+				}
+				else{
+					clickedItem.classList.add('active');
+				    parentBlock.classList.add('active');
+				}
 			}else{
 				clickedItem.classList.add('active');
-				 changeItem.classList.add('active');
+				 parentBlock.classList.add('active');
 			}
 		});
 	}
-	/*====скрипт для добавления / удаления класса в группе элементов */
-	// function toggleActiveClass ( block ){
-	// 	const clickedItems = block.querySelectorAll('.click-item');
-	// 	const clickedItemActive = block.querySelector('.click-item.active');
-	// 	for(let item of clickedItems){
-	// 		item.addEventListener('click', ()=>{
-	// 			if(clickedItemActive){
-	// 				clickedItemActive.classList.remove('active');
-	// 				item.classList.add('active');
-	// 			}
-	// 		});
-	// 	}
-	// }
-	
+
 
 });

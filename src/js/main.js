@@ -8,9 +8,18 @@ document.addEventListener("DOMContentLoaded", function () {
 		navigation:{
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev'
-
 		}
 	});
+	/*NEWS SLIDER */
+	var newsSlider = new Swiper('.news-swiper', {
+		slidesPerView:4,
+		spaceBetween: 30,
+		speed: 600,
+		navigation:{
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev'
+		}
+	})
 	function addActiveClass(args){
 		for(item of args){
 			item.classList.add('active');

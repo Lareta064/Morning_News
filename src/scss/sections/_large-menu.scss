@@ -11,6 +11,9 @@
 	transition: .3s; 
 	&.active{
 		max-height:300px;
+		@media (max-width: 767px) {
+			max-height: 100dvh;
+		}
 	}
 	.header-container{
 		align-items: flex-start;
@@ -19,11 +22,24 @@
 		@media (max-width: 1439px) {
 			padding-block: 30px;
 		}
+		@media (max-width: 767px) {
+		 flex-direction: column;
+		 padding-block: 30px;
+		 justify-content: flex-start;
+		 row-gap:30px;
+		 overflow: hidden;
+		 overflow-y: auto;
+		 max-height: 100%;
+		}
 	}
 	&-list{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 142px;
+		@media (max-width: 767px) {
+			grid-template-columns: 1fr;
+			row-gap:10px;
+		}
 	}
 	&-list a{
 		font-size: 20px;

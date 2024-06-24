@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	/* HEADER MENU SLIDER */
 	var headerMenuSlider = new Swiper('.header-menu-swiper', {
 		slidesPerView: 'auto',
-		spaceBetween: 40,
+		spaceBetween: 20,
+		speed: 600,
 		navigation:{
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev'

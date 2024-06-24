@@ -16,6 +16,9 @@
 		align-items: flex-start;
 		justify-content: space-between;
 		padding-block: 60px;
+		@media (max-width: 1439px) {
+			padding-block: 30px;
+		}
 	}
 	&-list{
 		display: grid;
@@ -34,7 +37,5 @@
 		}
 	}
 	&-list>*+*{margin-top: 10px;}
-	@media (max-width: 1439px) {
-		padding-block: 30px;
-	}
+	
 }

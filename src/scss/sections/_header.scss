@@ -13,6 +13,7 @@
 	&-center{
 		height: 50px;
 		background-color: #fff;
+		.header-container{padding-left: 48px;}
 	}
 }
 .menu-toggle{margin-right: 15px;}
@@ -24,6 +25,6 @@
 	
 }
 .currency-wrapper{
-	display: flex;
-	align-items: center;
+	
+	&>*{font-size: 11px; line-height: 1.4; font-weight: 500;}
 }

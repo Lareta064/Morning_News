@@ -29,23 +29,25 @@ header.header
 	//=======HEADER CENTER ROW =====				
 	.header-center
 		.header-container
-			div.currency-wrapper
-				#USD $ 00,0000 руб.
-				#EUR € 00,0000 руб.
+			.flex-group.currency-wrapper
+				#USD $ 87,90
+				#EUR € 95,00
+				#CNY &#165; 12,00
+				#IMOEX IMOEX 3233,22
 			.swiper.header-menu-swiper
 				.swiper-wrapper
 					+header-menu([
-						{title: 'Home'},
-						{title: 'About Us'},
-						{title: 'Contacts'},
-						{title: 'Contacts'},
-						{title: 'Contacts'},
-						{title: 'Contacts'},
-						{title: 'Contacts'},
-						{title: 'Contacts'},
-						{title: 'Contacts'},
-						{title: 'Contacts'},
-						{title: 'Contacts'}
+						{title: 'Что посмотреть в кино'},
+						{title: 'Свежий Weekend'},
+						{title: 'Валютный прогноз'},
+						{title: 'ПМЭФ–2024'},
+						{title: 'Свежие «Деньги»'},
+						{title: 'Что посмотреть в кино'},
+						{title: 'Свежий Weekend'},
+						{title: 'Валютный прогноз'},
+						{title: 'ПМЭФ–2024'},
+						{title: 'Свежие «Деньги»'},
+						{title: 'Свежий Weekend'}
 					])
 			.header-swiper-nav
 				.swiper-button-next

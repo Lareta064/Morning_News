@@ -9,11 +9,22 @@
 		background-color: $darkBg;
 		color: white;
 		.header-container{justify-content: space-between;}
+		@media (max-width: 767px) {
+		.location{display: none;}
+		}
 	}
 	&-center{
 		height: 50px;
 		background-color: #fff;
-		.header-container{padding-left: 48px;}
+		.header-container{
+			padding-left: 48px;
+			@media (max-width: 1439px) {
+				padding-right: 48px;
+			}
+			@media (max-width: 1199px) {
+			 padding-inline: 32px 24px;
+			}
+		}
 	}
 }
 .menu-toggle{margin-right: 15px;}
@@ -21,10 +32,12 @@
 	width: min(1140px, 100%);
 	margin-inline: auto;
 	position: relative;
+	padding-inline: 20px;
+	
 
 	
 }
 .currency-wrapper{
-	
+	white-space: nowrap;
 	&>*{font-size: 11px; line-height: 1.4; font-weight: 500;}
 }

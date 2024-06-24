@@ -34,11 +34,15 @@
 	-webkit-font-smoothing: antialiased;
 
   }
-  .lock {
+  body.active {
 	overflow: hidden;
 	touch-action: none;
 	-ms-touch-action: none;
 	height: 100vh;
+  padding-right: 17px;
+    @media (max-width: 1199px) {
+      padding-right: 0;
+    }
   }
   
   a{color: inherit; display: inline-block;}

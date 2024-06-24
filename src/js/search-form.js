@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	/*====скрипт для формы поиска */
 	function addActiveClass ( parentBlock, clickedItem, changeItem ){
 		clickedItem.addEventListener('click', (e)=>{
-			console.log('555');
+			
 			if(clickedItem.classList.contains('active')){
 				if(changeItem.value ==''){
 					clickedItem.classList.remove('active');

@@ -1,0 +1,34 @@
+.large-menu{
+	position: fixed;
+	top: 60px;
+	left: 0;
+	right: 0;
+	z-index: 15;
+	padding-block: 60px;
+	background-color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(24, 39, 75, 0.25);
+	.header-container{
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	&-list{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 142px;
+	}
+	&-list a{
+		font-size: 20px;
+		line-height: 1.4;
+		font-weight: 700;
+		display: block;
+		width: fit-content;
+		transition: .3s; 
+		&:hover{
+			opacity: .6;
+		}
+	}
+	&-list>*+*{margin-top: 10px;}
+	@media (max-width: 1439px) {
+		padding-block: 30px;
+	}
+}

@@ -45,3 +45,13 @@
 		display: none;
 	}
 }
+
+.swiper-button-next,.swiper-button-prev {
+		&:after {
+			font-size: 14px;
+			color: var(--darkBg);
+			font-weight: 700;
+		}
+
+	@media (max-width: 1023px) {display: none;}
+}

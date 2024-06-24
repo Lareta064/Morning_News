@@ -1,6 +1,15 @@
-@function remy($pxsize) {
-
-  @return calc(($pxsize/16))+rem;
+:root{
+  --white: #ffffff;
+  --text: #2b3544;
+  --greyText: #999;
+  --accent: #da251d;
+  --darkBg: #2B3544;
+  --bodyBg: #E9F8FF;
+  --socialBg: #E9F8FF;
+  
+  --newsLineDuration: 20s;/* длительность движения линии новостей*/
+  --newsLineHover: #f9f9f9;
+  --fontFamily: 'InterTight', sans-serif;
 }
 * {
 	  box-sizing: border-box;
@@ -27,10 +36,10 @@
 	padding: 0;
 	width: 100%;
   height: 100%;
-  font-family: $ff;
-  background-color: $bodyBg;
+  font-family: var(--fontFamily);
+  background-color: var(--bodyBg);
   line-height: 1.5;
-  color: $text;
+  color: var(--text);
 	-webkit-font-smoothing: antialiased;
 
   }
@@ -110,7 +119,7 @@ select:-webkit-autofill:focus {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.4;
-  color: $greyText;
+  color: var(--greyText);
   margin-bottom: 10px;
 }
 .flex-group{
@@ -119,7 +128,7 @@ select:-webkit-autofill:focus {
   gap:10px;
 }
 main.main{
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 24px;
   width: min(1060px, 100%);
   padding: 40px;

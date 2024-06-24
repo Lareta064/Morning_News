@@ -1,0 +1,44 @@
+
+.moving-block {
+	width: 100%;
+	overflow: hidden;
+	height: 50px;
+	background-color: var(--darkBg);
+	color: var(--white);
+}
+
+.moving-block-row {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	animation-name: moving;
+	animation-duration: var(--newsLineDuration);
+	animation-timing-function: linear;
+	animation-play-state: running;
+	animation-iteration-count: infinite;
+}
+
+.moving-block-row:hover {
+	animation-play-state: paused;
+}
+
+.moving-block-row a {
+	flex-shrink: 0;
+	font-size: 11px;
+	line-height: 1.4;
+	font-weight: 700;
+	padding: 18px 15px;
+	transition: .3s;
+
+}
+
+.moving-block-row a:hover {
+	background-color: var(--newsLineHover);
+	color: var(--text);
+}
+
+@keyframes moving {
+	to {
+		transform: translateX(-100vw);
+	}
+}

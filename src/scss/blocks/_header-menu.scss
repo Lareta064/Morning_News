@@ -13,7 +13,7 @@
 		font-size: 11px;
 		line-height: 1.40;
 		text-decoration: underline;
-		text-decoration-skip-ink: none;color: $text;
+		text-decoration-skip-ink: none;color: var(--text);
 		transition: .3s; 
 		&:hover{
 			opacity: .6;
@@ -24,7 +24,7 @@
 .header-swiper-nav{
  	.swiper-button-next{
 		right: -32px;
-		&:after{font-size: 16px; color: #2B3544;}
+		&:after{font-size: 16px; color: var(--darkBg);}
 		@media (max-width: 1439px) {
 			right: 0;
 		
@@ -35,7 +35,7 @@
 		&:after {
 				font-size: 14px;
 				font-weight: 700;
-				color: #2B3544;
+				color: var(--darkBg);
 			}
 	}
 	@media (max-width: 1023px) {

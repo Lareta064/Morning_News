@@ -1,11 +1,11 @@
 .news-card{
-	background-color: #fff;
+	background-color: var(--white);
 	
 	&__img{
 		width: 100%;
 		height: 135px;
 		overflow: hidden;
-		background-color: #f9f9f9;
+		background-color: var(--greyText);
 		border-radius: 16px;
 		box-shadow: 0 4px 8px 0 rgba(24, 39, 75, 0.25);
 		img{
@@ -22,7 +22,7 @@
 	}
 	&__cat{
 		font-size: 11px;
-		color: $greyText;
+		color: var(--greyText);
 		line-height: 1.4;
 	}
 	&__title{
@@ -35,8 +35,8 @@
 	&:hover img{
 		transform: scale(1.08);
 	}
-	&:hover &__title{color: $greyText;}
-	&:hover &__cat{color: $text;}
+	&:hover &__title{color: var(--greyText);}
+	&:hover &__cat{color: var(--text);}
 }
 .news-card.news-card--long{
 	.news-card__img{height: 225px;}

@@ -149,6 +149,9 @@ section{
   &:last-child:has(+ section) {
     border-radius: 0 0 24px 24px ;
   }
+  @media (max-width: 1023px) {
+    padding: 30px 20px;
+  }
 }
 section +section{
   border-radius: 0;

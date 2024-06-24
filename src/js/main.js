@@ -12,14 +12,25 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 	/*NEWS SLIDER */
 	var newsSlider = new Swiper('.news-swiper', {
-		slidesPerView:4,
-		spaceBetween: 30,
+		slidesPerView:1.3,
+		spaceBetween: 20,
 		speed: 600,
 		navigation:{
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev'
+			nextEl: '.news-button-next',
+			prevEl: '.news-button-prev'
+		},
+		breakpoints: {
+			580: {
+			slidesPerView: 'auto',
+			spaceBetween: 20,
+			},
+			
+			1200:{
+				slidesPerView: 4,
+				spaceBetween: 30,
+			}
 		}
-	})
+	});
 	function addActiveClass(args){
 		for(item of args){
 			item.classList.add('active');

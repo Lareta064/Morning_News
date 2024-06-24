@@ -1,0 +1,41 @@
+.svg-tg{
+	width: 15px;
+	height: 13px;
+	color: $darkBg
+}
+.svg-vk {
+	width: 18px;
+	height: 12px;
+	color: $darkBg
+}
+
+.svg-ok{
+	width: 12px;
+	height: 18px;
+	color: $darkBg
+}
+.svg-wa {
+	width: 17px;
+	height: 18px;
+	color: $darkBg
+}
+.social-contacts, .social-contacts a{
+	display: flex;
+	align-items: center;
+}
+.social-contacts{
+	column-gap:10px;
+	a{
+		background-color: $social;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		justify-content: center;
+		transition: .3s;
+		&:hover{
+			background-color: $ac;
+			svg{color: white;}
+		}
+	}
+}
+

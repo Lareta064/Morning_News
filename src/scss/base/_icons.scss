@@ -1,5 +1,6 @@
 *[class^="svg-"]{
 	display: inline-block;
+	transition: .3s; 
 }
 .svg-search{
 	width: 24px;
@@ -23,3 +24,10 @@
 	cursor: pointer;
 	&:hover .svg-pin{color: rgba(255, 255, 255, 1);}
 }
+.svg-eye{
+	width: 24px;
+	height: 24px;
+	fill: transparent;
+	color: red;
+}
+.svg-repost {color: red;}

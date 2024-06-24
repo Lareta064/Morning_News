@@ -127,10 +127,16 @@ select:-webkit-autofill:focus {
   align-items: center;
   gap:10px;
 }
+main{
+  margin-block: 40px;
+  @media (max-width: 767px) {
+    margin-block: 20px;
+  }
+}
 main.main{
   background-color: var(--white);
   border-radius: 24px;
-  width: min(1060px, 100%);
+  width: min(1160px, 100%);
   padding: 40px;
   margin-inline: auto;
   .container>*+*{margin-top: 40px;}

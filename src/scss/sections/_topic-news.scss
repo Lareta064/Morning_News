@@ -2,11 +2,22 @@
 	border-top: 2px solid var(--sectionBorder);
 	padding-top: 30px;
 	&__title{
-		.h1{margin-bottom: 10px;}
+		.h1{
+			margin-bottom: 10px;
+			max-width: 520px;
+		}
+		
 	}
 	&-img{
 		img{
+			width: 100%;
 			aspect-ratio: 104/59;
 		}
+	}
+	@media (max-width: 1023px) {
+	 .grid-col-2{
+		grid-template-columns: 1fr;
+		row-gap:20px;
+	 }
 	}
 }

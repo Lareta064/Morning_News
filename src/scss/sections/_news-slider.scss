@@ -12,4 +12,10 @@
 		.news-swiper-nav{display: none;}
 		.news-swiper {width: calc(50vw + 50%);}
 	}
+	@media (max-width: 1023px) {
+		padding-bottom: 20px;
+	}
+	@media (max-width: 767px) {
+		padding-bottom: 15px;
+	}
 }

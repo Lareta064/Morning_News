@@ -1,0 +1,90 @@
+.custom-select-wrapper {
+	position: relative;
+	user-select: none;
+}
+
+.custom-select {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.custom-select__trigger {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.location{margin-left: 10px;}
+	height: 55px;
+	cursor: pointer;
+}
+
+.custom-options {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: -16px;
+	width: max-content;
+	white-space: nowrap;
+	box-shadow: 0 4px 8px 0 rgba(24, 39, 75, 0.25);
+	border-top: none;
+	background-color: var(--darkBg);
+
+	transition: var(--transition);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	z-index: 5;
+	max-height: var(--citySelectHeight);
+	overflow: hidden;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--greyText) var(--bodyBg);
+
+	&::-webkit-scrollbar {
+		width: 3px;
+		height: 20px;
+		border-radius: 20px;
+	}
+
+	&::-webkit-scrollbar-track {
+		width: 3px;
+		height: 20px;
+		border-radius: 20px;
+		background-color: var(--bodyBg);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		width: 3px;
+		height: 20px;
+		background-color: var(--greyText);
+	}
+	@media (max-width: 1199px) {
+		scrollbar-width:none;
+		&::-webkit-scrollbar{display: none;}
+	}
+}
+
+.custom-option {
+	position: relative;
+	display: block;
+	padding: 0 1em;
+	font-size: 16px;
+	line-height: 40px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.custom-option:hover {
+	cursor: pointer;
+	background-color: var(--greyText);
+}
+
+.custom-select.open .custom-options {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+
+

@@ -5,4 +5,17 @@
 .article{
 	padding-bottom: 20px;
 	padding-top: 20px;
+	&.grid-col-3{
+		row-gap:20px;
+		@media (max-width: 1023px) {
+			grid-template-columns: 1fr;
+			.news-card{
+				max-width: 440px;
+				
+				.news-card__img, .news-card__img img{
+					aspect-ratio: 16 / 9;height: unset;
+				}
+			}
+		}
+	}
 }

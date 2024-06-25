@@ -1,7 +1,13 @@
 .aside-right{
 	display: grid;
-	grid-template-columns: 3fr 1fr;
+	grid-template-columns: 1fr 240px;
 	gap: 40px;
+	@media (max-width: 1199px) {
+		gap: 20px;
+	}
+	@media (max-width: 1023px) {
+		grid-template-columns: 1fr;
+	}
 }
 .grid-col-2 {
 	display: grid;
@@ -15,6 +21,9 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap:40px;
+	@media (max-width: 1199px) {
+		gap: 20px;
+	}
 }
 .grid-col-4 {
 	display: grid;

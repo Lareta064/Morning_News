@@ -7,7 +7,7 @@
 	padding-top: 20px;
 	&.grid-col-3{
 		row-gap:20px;
-		@media (max-width: 1023px) {
+		@media (max-width: 767px) {
 			grid-template-columns: 1fr;
 			.news-card{
 				max-width: 440px;

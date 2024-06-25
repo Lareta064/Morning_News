@@ -23,16 +23,45 @@ main.main
 					+news-card('', 'Спорт', 'Укротитель бросков', 'Благодаря голкиперу Сергею Бобровскому «Флорида» начала финальную серию Кубка Стэнли с победы')(class="news-card--short")
 					+news-card('', 'Мир', 'Евроремонт по-французски', 'Начались выборы в Европейский парламент')(class="news-card--short")
 
-			
-			article
-				.h2.article-cat Политика
-				.article-content.grid-col-3
-					
 		
-		.grid-col-1
-			article
+		.grid-col
+			article.article
 				.h2.article-cat Частное мнение
 				.article-content
 					+news-card('news', 'Происшествия', 'Сербов всех стран зовут соединяться',  'Всесербский собор не поддержал «боснийский развод»', '225', '225')(class=" news-card--long")
+			article.article
+				.card-list
+					.h2.article-cat Самое читаемое
+					.card-list__img
+						img(src="./img/read-news.webp", width="290" height="170" alt="img")
+					ol.card-list__body
+						li
+							span.eye-label 70719
+								svg.svg-eye
+									use( href='./img/spriteSvg.svg#svg-eye')
+							p Глашатай истин роковых
+
+						li
+							span.eye-label 70719
+								svg.svg-eye
+									use( href='./img/spriteSvg.svg#svg-eye')
+							p ЦКАД ведет в колонию
+
+						li
+							span.eye-label 70719
+								svg.svg-eye
+									use( href='./img/spriteSvg.svg#svg-eye')
+							p При дворе их звали Настенька и Трина
+						li
+							span.eye-label 70719
+								svg.svg-eye
+									use( href='./img/spriteSvg.svg#svg-eye')
+							p  Город, сделанный из древнерусского
+						li
+							span.eye-label 70719
+								svg.svg-eye
+									use( href='./img/spriteSvg.svg#svg-eye')
+							p  «Плесень старого чиновничества покрыла наши учреждения»
+
 
 		

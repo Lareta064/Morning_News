@@ -12,6 +12,7 @@
 			width: 100%;
 			height: 100%;
 			transition: var(--transition); 
+			object-fit:cover;
 			
 		}
 	}
@@ -68,6 +69,7 @@
 	}
 	@media (max-width: 767px) {
 		flex-direction: column;
+		max-width: 440px;
 	}
 }
 .grid-col-3{

@@ -10,8 +10,6 @@
 @import "blocks/_news-card";
 @import "blocks/_card-list";
 
-
-
 //sections
  @import "blocks/custom-select";
  @import "sections/header";
@@ -19,8 +17,9 @@
  @import "sections/large-menu";
  @import "sections/moving-line";
  @import "sections/topic-news";
- @import "sections/main";
+ @import "sections/right-sidebar";
  @import "sections/news-slider";
  @import "sections/news-slider-two";
+  @import "sections/grid-left-column";
 
  @import "sections/footer";

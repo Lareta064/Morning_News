@@ -36,7 +36,7 @@
 	grid-template-columns: repeat(4, 1fr);
 	gap: 40px;
 }
-.aside-right .grid-col{
+.aside-right__sidebar{
 	@media (max-width: 1023px) {
 		display: grid;
 		grid-template-columns: 1fr 240px;
@@ -48,4 +48,9 @@
 		grid-template-columns: 1fr;
 		row-gap:0;
 	}
+}
+.grid-special{
+	display: grid;
+	grid-template-columns: 240px 1fr;
+	column-gap: 40px;
 }

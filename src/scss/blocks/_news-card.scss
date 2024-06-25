@@ -76,7 +76,13 @@
 	.news-card--short:nth-child(n+4){
 		border-top: 1px solid var(--sectionBorder);
 		.news-card__body {padding-top: 20px;}
-				
-			
+	}
+}
+.grid-col-2{
+	.news-card--short:nth-child(n+3) {
+		border-top: 1px solid var(--sectionBorder);
+		.news-card__body {
+			padding-top: 20px;
+		}
 	}
 }

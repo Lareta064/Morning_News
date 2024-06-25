@@ -179,7 +179,7 @@ section{
      padding-top: 30px;
     }
   }
-  &:last-child:has(+ section) {
+  &:last-child {
     border-radius: 0 0 24px 24px ;
   }
   @media (max-width: 1023px) {

@@ -1,6 +1,9 @@
 .custom-select-wrapper {
 	position: relative;
 	user-select: none;
+	@media (max-width: 767px) {
+	display: none;
+	}
 }
 
 .custom-select {
@@ -17,6 +20,7 @@
 	.location{margin-left: 10px;}
 	height: 55px;
 	cursor: pointer;
+	span{color: rgba(255, 255, 255, .6);}
 }
 
 .custom-options {

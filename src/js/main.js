@@ -31,6 +31,29 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		}
 	});
+	/*NEWS SLIDER-2 */
+	var newsSlider = new Swiper('.news-swiper-two', {
+		slidesPerView:1.3,
+		spaceBetween: 20,
+		speed: 600,
+		navigation:{
+			nextEl: '.news-button-next-two',
+			prevEl: '.news-button-prev-two'
+		},
+		breakpoints: {
+			580: {
+			slidesPerView: 'auto',
+			spaceBetween: 20,
+			},
+			
+			1200:{
+				slidesPerView: 4,
+				spaceBetween: 30,
+			}
+		}
+	});
+
+	/***************************************/
 	function addActiveClass(args){
 		for(item of args){
 			item.classList.add('active');
@@ -108,4 +131,20 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 	});
+
+	/**********TABS BUTTONS********** */
+	const sliderTab =  document.querySelector('.tabs-btns');
+	if(sliderTab){
+		const sliderTabBtns =  sliderTab.querySelectorAll('.tab-btn');
+		
+		for(let i=0; i < sliderTabBtns.length; i++){
+			 sliderTabBtns[i].addEventListener('click', ()=>{
+				const sliderTabActiveBtn =  sliderTab.querySelector('.tab-btn.active');
+				sliderTabActiveBtn.classList.remove('active');
+				sliderTabBtns[i].classList.add('active');
+			})
+		}
+	}
+	
+
 });

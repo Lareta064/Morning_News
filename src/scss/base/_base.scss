@@ -139,10 +139,20 @@ select:-webkit-autofill:focus {
   color: var(--greyText);
 }
 
-.flex-group{
+.flex-group, .flex-header{
   display: flex;
   align-items: center;
   gap:10px;
+}
+.flex-header {
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--sectionBorder);
+  .article-cat{
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 main{
  padding-block: 40px;
@@ -257,6 +267,4 @@ section +section{
   left: 0;
   top: 21px;
   font-size: inherit;
-
 }
-

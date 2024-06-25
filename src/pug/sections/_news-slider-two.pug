@@ -1,0 +1,32 @@
+section.news-slider.article
+	.flex-header
+		.h2.article-cat Мультимедиа
+		.tabs-btns
+			button.tab-btn.active Фото
+			button.tab-btn Видео
+			button.tab-btn Спецпроекты
+			button.tab-btn Подкасты
+			button.tab-btn Наглядно
+	.news-swiper-two.swiper
+		.swiper-wrapper
+			//===single-slide=====
+			.swiper-slide
+				+news-card('news-slider1', 'Наглядно', 'Все вокруг искрится','Главные машины ПМЭФ-2024')
+			//===single-slide=====
+			.swiper-slide
+				+news-card('news-slider2', 'Фотогалерея', 'Лица ПМЭФ-2024','Участники и гости форума')
+			//===single-slide=====
+			.swiper-slide
+				+news-card('news-slider1', 'Наглядно', 'Все вокруг искрится','Главные машины ПМЭФ-2024')
+			//===single-slide=====
+			.swiper-slide
+				+news-card('news-slider2', 'Наглядно', 'Все вокруг искрится','Главные машины ПМЭФ-2024')
+			//===single-slide=====
+			.swiper-slide
+				+news-card('news-slider1', 'Наглядно', 'Все вокруг искрится','Главные машины ПМЭФ-2024')
+			//===single-slide=====
+			.swiper-slide
+				+news-card('news-slider2', 'Наглядно', 'Все вокруг искрится','Главные машины ПМЭФ-2024')
+	.news-swiper-nav
+		.swiper-button-next.news-button-next-two
+		.swiper-button-prev.news-button-prev-two

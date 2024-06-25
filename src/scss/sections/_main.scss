@@ -1,3 +1,9 @@
+.articles{
+	@media (max-width: 767px) {
+		padding-bottom: 0;
+	}
+	
+}
 .article +.article{
 	padding-top: 20px;
 	border-top: 2px solid var(--sectionBorder);

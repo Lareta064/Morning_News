@@ -179,12 +179,11 @@ section +section{
   border-radius: 0;
 }
 .txt-center{text-align: center;}
-article{
-  padding-top: 40px;
-  .article-content{
-    padding-top: 30px;
-    border-top: 2px solid #eeeeee;
-  }
+
+.article-cat{
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--sectionBorder);
 }
 .accent-label{
   display: inline-block;

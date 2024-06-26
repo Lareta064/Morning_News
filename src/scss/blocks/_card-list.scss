@@ -8,10 +8,36 @@
 	}
 	@media (max-width: 767px) {
 		max-width: 400px;
-		// &__img{width: 100%;}
+		
 		&__img img{
 			width: 100%;
 			aspect-ratio: 16 / 9;
 		}
 	}
+}
+.card-list__body {
+	counter-reset: point;
+	list-style: none;
+	padding-top: 15px;
+}
+.card-list__body li {
+	padding-left: 18px;
+	position: relative;
+	line-height: 1.5;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.card-list__body li+li {
+	margin-top: 15px;
+}
+
+.card-list__body li:before {
+	content: counter(point) '.';
+	counter-increment: point 1;
+	font-size: 1px;
+	position: absolute;
+	left: 0;
+	top: 18px;
+	font-size: inherit;
 }

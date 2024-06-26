@@ -119,8 +119,9 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 .container{
- width: 100%;
+  width: min(1200px, 100%);
   margin: 0 auto;
+  padding-inline: 20px;
  
 }
 .h1, .h2, .article-cat{
@@ -337,38 +338,17 @@ section{
     }
   }
 }
-.card-list__body{
-  counter-reset: point;
-  list-style: none;
-  padding-top:15px;
-}
-.card-list__body span{
+.icon-item {
   color: var(--greyText);
   font-weight: 400;
   font-size: 11px;
   display: flex;
   align-items: center;
-  gap:6px;
-  .svg-eye{
+  gap: 6px;
+
+  svg {
     width: 12px;
     height: 12px;
-   color: #777;
+    color: #777;
   }
-}
-.card-list__body li {
-  padding-left: 18px;
-  position: relative;
-  line-height: 1.5;
-  font-size: 14px;
-  font-weight: 700;
-}
-.card-list__body li +li{margin-top: 15px;}
-.card-list__body li:before{
-  content: counter(point) '.';
-  counter-increment: point 1;
-  font-size: 1px;
-  position: absolute;
-  left: 0;
-  top: 18px;
-  font-size: inherit;
 }

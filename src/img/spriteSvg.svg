@@ -92,6 +92,10 @@
 			</defs>
 		</g>
 	</symbol>
-
+	<symbol id="svg-chevron" viewBox="0 0 12 8">
+		<g>
+			<path d="M11.1426 1.65625L5.99972 6.34375L0.856864 1.65625" stroke="currentColor" 	stroke-width="2" />
+		</g>
+	</symbol>
 	
 </svg>

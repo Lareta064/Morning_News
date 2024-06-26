@@ -1,0 +1,25 @@
+.btn{
+	display: flex;
+	width: fit-content;
+	padding-inline: 35px;
+	height: 42px;
+	border-radius: 8px;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--white);
+	background-color: var(--accent);
+	text-align: center;
+	outline: none;
+	white-space: nowrap;
+	transition: var(--transition);
+	column-gap:10px;
+	
+	&:hover{
+		background-color: darken(#da251d, 5%);
+	}
+	&:active {
+			background-color: lighten(#da251d, 5%);
+		}
+}

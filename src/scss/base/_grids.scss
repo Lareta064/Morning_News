@@ -41,11 +41,13 @@
 	gap: 40px;
 }
 .aside-right__sidebar{
+	.article:first-child{padding-top: 0;}
+
 	@media (max-width: 1023px) {
 		display: grid;
 		grid-template-columns: 1fr 240px;
 		column-gap: 30px;
-		.article +.article{border-top: 0;}
+		.article +.article{border-top: 0; padding-top: 0;}
 		.news-card{width:min(400px, 100%);}
 	}
 	@media (max-width: 767px) {

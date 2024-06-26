@@ -230,6 +230,10 @@ section{
    padding: 4px 8px;
    border-radius: 8px;
    margin-bottom: 10px;
+   transition: var(--transition);
+   &:hover{
+    opacity: .6;
+   }
 }
 .news-list{
   li{

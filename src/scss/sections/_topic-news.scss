@@ -5,14 +5,23 @@
 		.h1{
 			margin-bottom: 10px;
 			max-width: 520px;
+			transition: var(--transition); 
 		}
 		
 	}
-	&-img{
+	.topic-news-link:hover{
+		.h1{color: var(--greyText)}
+	}
+	.topic-img{
+		overflow: hidden;
 		img{
 			width: 100%;
 			aspect-ratio: 104/59;
+			transition: var(--transition);
 		}
+	}
+	.topic-news-link:hover{
+		img{transform: scale(1.007);}
 	}
 	@media (max-width: 1023px) {
 	 .grid-col-2{

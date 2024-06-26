@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	var headerMenuSlider = new Swiper('.header-menu-swiper', {
 		slidesPerView: 'auto',
 		spaceBetween: 20,
-		speed: 600,
 		navigation:{
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev'
@@ -14,7 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	var newsSlider = new Swiper('.news-swiper', {
 		slidesPerView:1.3,
 		spaceBetween: 20,
-		speed: 600,
+		loop: true,
+		speed: 5000,
+		
+		 autoplay: {
+			delay: 10,
+			
+		},
 		navigation:{
 			nextEl: '.news-button-next',
 			prevEl: '.news-button-prev'
@@ -31,11 +36,16 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		}
 	});
+	
 	/*NEWS SLIDER-2 */
 	var newsSlider = new Swiper('.news-swiper-two', {
 		slidesPerView:1.3,
 		spaceBetween: 20,
-		speed: 600,
+		loop: true,
+		speed: 5000,
+		 autoplay: {
+			delay: 10,
+		},
 		navigation:{
 			nextEl: '.news-button-next-two',
 			prevEl: '.news-button-prev-two'
@@ -52,11 +62,16 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		}
 	});
-	/*NEWS SLIDER-2 */
+	/*NEWS CARDS SLIDER  */
 	var cardsSlider = new Swiper('.cards-swiper', {
 		slidesPerView:1.3,
 		spaceBetween: 20,
-		speed: 600,
+		loop: true,
+		speed: 5000,
+		 autoplay: {
+			delay: 10,
+			
+		},
 		navigation:{
 			nextEl: '.cards-swiper-next',
 			prevEl: '.cards-swiper-prev'

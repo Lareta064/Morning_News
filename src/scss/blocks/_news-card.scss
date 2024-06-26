@@ -33,6 +33,8 @@
 		font-size: 11px;
 		color: var(--greyText);
 		line-height: 1.4;
+		width: fit-content;
+		display: block;
 	}
 	&__title{
 		font-weight: 700;
@@ -40,12 +42,16 @@
 		line-height: 1.4;
 		transition:var(--transition); 
 		color: var(--text);
+		
 	}
 	&:hover img{
 		transform: scale(1.04);
 	}
-	&:hover &__title{color: var(--greyText);}
-	&:hover &__cat{color: var(--text);}
+	.news-card__link{
+		display: block;
+	}
+	.news-card__link:hover .news-card__title{color: var(--greyText);}
+	&__cat:hover{color: var(--accent);}
 	@media (max-width: 767px) {
 		max-width: 440px;
 		&__body{padding-inline: 0;}

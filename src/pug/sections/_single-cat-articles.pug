@@ -1,11 +1,14 @@
-section.aside-right.articles
+section.aside-right
 	//======LARGE LEFT COLUMN======
 	.aside-right__content
 		.flex-header
 			h1.h1 Мир
 			a(href="#!").h2 Все публикации
-		.articles-block
-			+news-card('img1', 'Происшествия', 'Миражи Эмманюэля Макрона', 'Президент Франции пообещал вывести военную поддержку Украине на новый уровень',  '440', '250')(class="news-card--horiz")
+		.cat-news-wrapper.pt-30
+			+news-card-horiz('img1')
+			+news-card-horiz('img1')
+			+news-card-horiz('img1')
+			+news-card-horiz('')
 	
 	//======RIGHT COLUMN ======
 	.aside-right__sidebar

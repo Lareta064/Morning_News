@@ -1,24 +1,28 @@
 mixin news-card(img, cat, title, txt,  w ='240', h ='135')
-	a(href="#!").news-card&attributes(attributes)
+	.news-card&attributes(attributes)
 		if img !==''
 			.news-card__img
 				img(src="./img/"+ img +".webp", width=""+ w height=""+ h alt="alt")
 		.news-card__body
-			span.news-card__cat #{cat}
-			.news-card__title  #{title}
-			if  txt
-				p !{txt}
+			a(href="#!").news-card__cat #{cat}
+			a(href="#!").news-card__link
+				.news-card__title  #{title}
+				if  txt
+					p !{txt}
 
-mixin news-card-horiz(img, cat, title, txt,  w ='250', h ='145')
-	a(href="#!").news-card&attributes(attributes)
+mixin news-card-horiz(img)
+	.news-card.news-card--horiz
 		if img !==''
 			.news-card__img
-				img(src="./img/"+ img +".webp", width=""+ w height=""+ h alt="alt")
+				img(src="./img/"+ img +".webp", width="245"  height="150" alt="alt")
 		.news-card__body
-			span.news-card__cat #{cat}
-			.news-card__title  #{title}
-			if  txt
-				p !{txt}
+			span.news-card__meta 10.06.2024, 13:25
+				 
+			a(href="#!").news-card__link
+				.news-card__title  Песков счел внутренним делом Франции победу правых на европейских выборах
+			.news-card__tags
+				a(href="#!").tag-label #Мир
+				a(href="#!").tag-label #Лента новостей
 //- HEADER MENU ====
 mixin header-menu(arg)
 	each li in arg

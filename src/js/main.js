@@ -14,11 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		slidesPerView:1.3,
 		spaceBetween: 20,
 		loop: true,
-		speed: 5000,
+		speed: 3000,
 		
 		 autoplay: {
-			delay: 10,
-			
+			delay: 0,
+			pauseOnMouseEnter: true,
+			 disableOnInteraction: false,
 		},
 		navigation:{
 			nextEl: '.news-button-next',

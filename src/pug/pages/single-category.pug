@@ -1,0 +1,14 @@
+extends ../layouts/layout.pug
+
+block content
+	.page-wrapper
+		include ../sections/_header.pug
+		main.single-cat-main
+			include ../sections/_single-cat-articles.pug
+		include ../sections/_footer.pug
+
+	
+	
+	
+block variables
+	-var title = "Page";

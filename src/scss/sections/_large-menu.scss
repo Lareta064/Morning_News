@@ -37,6 +37,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 142px;
+		row-gap:10px;
 		@media (max-width: 767px) {
 			grid-template-columns: 1fr;
 			row-gap:10px;
@@ -53,6 +54,6 @@
 			opacity: .6;
 		}
 	}
-	&-list>*+*{margin-top: 10px;}
+	
 	
 }

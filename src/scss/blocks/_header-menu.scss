@@ -3,6 +3,10 @@
 	margin-left: auto;
 	margin-right: 20px;
 	@media (max-width: 1023px) {
+	width: 100%;
+	margin-right: auto;
+	}
+	@media (max-width: 767px) {
 		display: none;
 	}
 	.swiper-slide{width: fit-content!important;}
@@ -42,6 +46,11 @@
 		}
 	}
 	@media (max-width: 1023px) {
+		display: block;
+		.swiper-button-next,
+			.swiper-button-prev{display: flex;}
+	}
+	@media (max-width: 767px) {
 		display: none;
 	}
 }

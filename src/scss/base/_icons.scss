@@ -31,10 +31,16 @@
 	fill: transparent;
 	color: var(--svgColor);
 }
-.svg-repost {
+.svg-repost{
 	width: 24px;
 	height: 24px;
 	color:  var(--svgColor);
+	
+}
+.svg-share{
+	fill: white;
+	width: 20px;
+	height: 20px;
 	
 }
 .svg-chevron{
@@ -42,4 +48,5 @@
 	height: 8px;
 	fill: transparent;
 	color: var(--white);
+	
 }

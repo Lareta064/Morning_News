@@ -23,7 +23,7 @@
 		row-gap:15px
 	}
 	.subtitle {line-height: 1.6;}
-	&-content .news-date{color: var(--greyText); margin-bottom: 15px;}
+	&-content .news-date{color: var(--greyText); margin-bottom: 15px; margin-top: 3px;}
 	.hero-meta{
 		font-size: 11px;
 		line-height: 1.4;
@@ -31,10 +31,11 @@
 	}
 	.news-state{
 		svg{
+			color: #fff;
 			width: 24px;
 			height: 24px;
-			color: #fff;
 		}
+				.svg-share{width: 18px;height: 18px;}
 	}
 	&:before{
 		content: '';	

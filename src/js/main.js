@@ -141,7 +141,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 	}
-
+	
+	bodyEl.addEventListener('click', function(e){
+		if(!e.target.closest('.large-menu') && !e.target.closest('.menu-toggle')){
+			removeActiveClass([burgerIcon, largeMenu, bodyEl]);
+		}
+	})
 	/************* CUSTOM SELECT ************ */
 	document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
 	wrapper.addEventListener('click', function() {

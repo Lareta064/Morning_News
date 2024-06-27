@@ -135,16 +135,20 @@ select:-webkit-autofill:focus {
   font-size: 20px;
   }
 }
-.h2, .article-cat{
+.h2, .article-cat,.border-header{
   font-size: 16px;
   margin-bottom: 10px;
   color: var(--greyText);
   transition: var(--transition); 
 }
+ *.txt-dark, .txt-dark{
+  color: var(--text);
+}
 .link{
   width: fit-content;
   border-bottom: 1px solid currentColor;
   transition: .3s; 
+  line-height: 1.2;
   &:hover{opacity: .8;}
 }
 a.h2:hover{
@@ -157,6 +161,10 @@ a.h2:hover{
   border-left: 1px solid currentColor;
   font-style: italic;
   margin-block: 20px;
+  @media (max-width: 767px) {
+   margin-left: 15px;
+    padding-left: 15px;
+  }
 }
 .flex-group, .flex-header, .flex-center{
   display: flex;
@@ -282,29 +290,29 @@ section{
 }
 .txt-center{text-align: center;}
 
-.article-cat{
+.article-cat,.border-header{
   display: block;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 2px solid var(--sectionBorder);
   position: relative;
   transition: var(--transition);
-  &:after{
-    content: '';
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.65625 0.857178L6.34375 6.00003L1.65625 11.1429' stroke='%23DA251D' stroke-width='2'/%3e%3c/svg%3e");
-    background-size: 8px 12px;
-    vertical-align: middle;
-    margin-left: 5px;
-   transform: scale(0);
-    transition: var(--transition); 
-  }
-  &:hover{
-    color: var(--text);
-    &:after{transform: scale(1);}
-  }
+}
+.article-cat:after{
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.65625 0.857178L6.34375 6.00003L1.65625 11.1429' stroke='%23DA251D' stroke-width='2'/%3e%3c/svg%3e");
+  background-size: 8px 12px;
+  vertical-align: middle;
+  margin-left: 5px;
+ transform: scale(0);
+  transition: var(--transition); 
+}
+.article-cat:hover{
+  color: var(--text);
+  &:after{transform: scale(1);}
 }
 .tag-label{
   display: inline-block;

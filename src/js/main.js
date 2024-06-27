@@ -190,10 +190,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				prevEl: '.gallery-swiper-prev'
 			},
 	});
-  // Инициализация FancyBox
-  Fancybox.bind('[data-fancybox="gallery"]', {
-    // Опции для FancyBox
-  });
-
-
+  
+	Fancybox.bind('[data-fancybox="gallery"]', {});
 });

@@ -62,7 +62,7 @@
     }
   }
   
-  a{color: inherit; display: inline-block;}
+  a{color: inherit; display: inline-block; text-decoration-skip-ink: none;}
   a,
   a:hover {
 	text-decoration: none;
@@ -149,6 +149,14 @@ select:-webkit-autofill:focus {
 }
 a.h2:hover{
   color: var(--text);
+}
+.border-txt{
+  font-size: 14px;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid currentColor;
+  font-style: italic;
+  margin-block: 20px;
 }
 .flex-group, .flex-header, .flex-center{
   display: flex;

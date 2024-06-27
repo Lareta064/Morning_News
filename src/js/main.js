@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		}
 	});
+	
 
 	/***************************************/
 	function addActiveClass(args){
@@ -182,6 +183,17 @@ document.addEventListener("DOMContentLoaded", function () {
 			})
 		}
 	}
-	
+   /********Для страницы одной новости************** */
+	var newsGallery = new Swiper('.news-gallery', {
+		navigation:{
+				nextEl: '.gallery-swiper-next',
+				prevEl: '.gallery-swiper-prev'
+			},
+	});
+  // Инициализация FancyBox
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    // Опции для FancyBox
+  });
+
 
 });

@@ -100,30 +100,31 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 	function removeActiveClass(args){
 		for(item of args){
-			console.log(item);
+			
 			item.classList.remove('active');
 		}
 	}
 	/*****SEARCH FORM ***/
 	const searchForm = document.getElementById('search-form');/*  форма поиска */
+	const openSearchBtn = document.querySelector('.search-form-btn');/* кнопка с лупой */
 	if(searchForm){
-		const openSearchBtn = searchForm.querySelector('.search-form-btn');/* кнопка с лупой */
+		
 		const searchFormInput = searchForm.querySelector('.search-form-input');/* input */
 		/*клик по иконке Лупа */
 		openSearchBtn.addEventListener('click', (e)=>{
-			console.log(openSearchBtn.classList);
+			
 			if(openSearchBtn.classList.contains('active')){
-				console.log('есть класс эктив');
+				
 				if(searchFormInput.value ==''){
-					console.log(1);
-					removeActiveClass([searchForm, openSearchBtn])
+					
+					removeActiveClass([searchForm, openSearchBtn]);
 				}
 				else{
 					addActiveClass([searchForm, openSearchBtn]);
-					console.log(2);
+					
 				}
 			}else{
-				console.log('открываем');
+				
 				addActiveClass([searchForm, openSearchBtn])
 			}
 		});
@@ -146,6 +147,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	bodyEl.addEventListener('click', function(e){
 		if(!e.target.closest('.large-menu') && !e.target.closest('.menu-toggle')){
 			removeActiveClass([burgerIcon, largeMenu, bodyEl]);
+		}
+		
+		if(!e.target.closest('#search-form') && !e.target.closest('.search-form-btn')){
+			removeActiveClass([searchForm, openSearchBtn])
 		}
 	})
 	/************* CUSTOM SELECT ************ */

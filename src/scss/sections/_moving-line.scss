@@ -2,7 +2,8 @@
 .moving-block {
 	width: 100%;
 	overflow: hidden;
-	// height: 50px;
+	display: flex;
+	user-select: none;
 	background-color: var(--darkBg);
 	color: var(--white);
 	@media (max-width: 767px) {
@@ -19,6 +20,8 @@
 	animation-timing-function: linear;
 	animation-play-state: running;
 	animation-iteration-count: infinite;
+	justify-content: space-between;
+	flex-shrink: 0;
 	
 }
 
@@ -46,10 +49,10 @@
 
 @keyframes moving {
 0% {
-		transform: translate3d(0, 0, 0);
+		transform: translateX(0);
 	}
 
 	100% {
-		transform: translate3d(-110vw, 0, 0);
+		transform: translateX(calc(-100% - 10px));
 	}
 }

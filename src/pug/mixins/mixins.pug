@@ -1,7 +1,7 @@
 mixin news-card(img, cat, title, txt,  w ='240', h ='135')
 	.news-card&attributes(attributes)
 		if img !==''
-			.news-card__img
+			a(href="single-news.html").news-card__img
 				img(src="./img/"+ img +".webp", width=""+ w height=""+ h alt="alt")
 		.news-card__body
 			a(href="single-category.html").news-card__cat #{cat}
@@ -13,7 +13,7 @@ mixin news-card(img, cat, title, txt,  w ='240', h ='135')
 mixin news-card-horiz(img)
 	.news-card.news-card--horiz
 		if img !==''
-			.news-card__img
+			a(href="single-news.html").news-card__img
 				img(src="./img/"+ img +".webp", width="245"  height="150" alt="alt")
 		.news-card__body
 			span.news-card__meta 10.06.2024, 13:25
@@ -28,4 +28,17 @@ mixin header-menu(arg)
 	each li in arg
 		.swiper-slide
 			a(href=(li.link ? ""+ li.link : '#!')) #{li.title}
+
+mixin news-card-special(img, cat, title, txt,  w ='240', h ='135')
+	.news-card.news-card--special
+		if img !==''
+			.news-card__img
+				img(src="./img/"+ img +".webp", width=""+ w height=""+ h alt="alt")
+		.news-card__body
+			a(href="single-category.html").news-card__cat #{cat}
+			a(href="single-news.html").news-card__link
+				.news-card__title  #{title}
+				if  txt
+					p !{txt}
+
 				

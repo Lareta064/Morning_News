@@ -10,7 +10,7 @@
   --tagLabel: #999999;
   --svgColor: #999999;
 
-  --newsLineDuration: 20s;/* длительность движения линии новостей*/
+  --newsLineDuration: 100s;/* длительность движения линии новостей*/
   --transition: .3s; /* длительность hover*/
   --citySelectHeight: 300px; /*max-height для выпадающего списка городов*/
   --newsLineHover: #f9f9f9;
@@ -195,7 +195,6 @@ main{
   }
 }
 main.main{
-  
   border-radius: 24px;
 
   margin-inline: auto;
@@ -232,6 +231,17 @@ section{
     padding: 15px 20px;
   }
 }
+  .zoom-img {
+    overflow: hidden;
+
+    img {
+      transition: .3s;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
 .pt-10 {
   padding-top: 10px;
 }

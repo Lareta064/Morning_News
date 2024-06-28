@@ -19,6 +19,7 @@
 	animation-timing-function: linear;
 	animation-play-state: running;
 	animation-iteration-count: infinite;
+	
 }
 
 .moving-block-row:hover {
@@ -44,7 +45,11 @@
 }
 
 @keyframes moving {
-	to {
-		transform: translateX(-100vw);
+0% {
+		transform: translate3d(0, 0, 0);
+	}
+
+	100% {
+		transform: translate3d(-110vw, 0, 0);
 	}
 }

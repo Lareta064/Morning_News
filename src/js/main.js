@@ -4,9 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	var headerMenuSlider = new Swiper('.header-menu-swiper', {
 		slidesPerView: 'auto',
 		spaceBetween: 20,
+		speed:600,
 		navigation:{
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev'
+			nextEl: '.menu-swiper-next',
+			prevEl: '.menu-swiper-prev'
 		}
 	});
 	/*NEWS SLIDER */
@@ -14,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		slidesPerView:1.3,
 		spaceBetween: 20,
 		loop: true,
-		speed: 3000,
+		speed: 800,
 		
 		 autoplay: {
-			delay: 0,
+			delay: 1500,
 			pauseOnMouseEnter: true,
-			 disableOnInteraction: false,
+			disableOnInteraction: false,
 		},
 		navigation:{
 			nextEl: '.news-button-next',
@@ -43,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		slidesPerView:1.3,
 		spaceBetween: 20,
 		loop: true,
-		speed: 5000,
+		speed: 800,
 		 autoplay: {
-			delay: 10,
+			delay: 1500,
 		},
 		navigation:{
 			nextEl: '.news-button-next-two',
@@ -68,9 +69,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		slidesPerView:1.3,
 		spaceBetween: 20,
 		loop: true,
-		speed: 5000,
+		speed: 800,
 		 autoplay: {
-			delay: 10,
+			delay: 1500,
 			
 		},
 		navigation:{
@@ -190,10 +191,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
    /********Для страницы одной новости************** */
 	var newsGallery = new Swiper('.news-gallery', {
+		 pagination: {
+			el: ".gallery-pagination",
+			type: "fraction",
+		},
 		navigation:{
-				nextEl: '.gallery-swiper-next',
-				prevEl: '.gallery-swiper-prev'
-			},
+			nextEl: '.gallery-swiper-next',
+			prevEl: '.gallery-swiper-prev'
+		},
 	});
   
 	Fancybox.bind('[data-fancybox="gallery"]', {});

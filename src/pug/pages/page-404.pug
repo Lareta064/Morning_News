@@ -1,0 +1,63 @@
+extends ../layouts/layout.pug
+
+block content
+	.page-wrapper
+		include ../sections/_header.pug
+		main.page-404
+			section.page-404__content
+				.label-404
+					svg.svg-404
+						use( href='./img/spriteSvg.svg#svg-404')
+				
+				h1.h1 Запрошенная вами стра&shy;ница не существует или недоступна в данный момент.
+				//=======block=====
+				.page-404__block
+					ul.news-list
+						li Возможно, она была перемещена либо проводится ее обновление;
+						li Возможно, вы ошиблись при наборе адреса страницы;
+						li Если вы уверены в правильности адреса и считаете, что ошибка произошла по нашей вине, пожалуйста, сообщите об этом.
+
+				//=======block=====
+				.page-404__block
+					.title-20 Также вы можете:
+					ul.news-list
+						li Воспользоваться #[a(href="#!").link расширенным поиском] по сайту;
+						li Вернуться на предыдущую страницу при помощи кнопки браузера «назад»;
+						li Перейти на #[a(href="index.html").link главную страницу] сайта.
+
+			//======ДРУГИЕ НОВОСТИ ===
+			section.other-news
+				.other-news-wrapper
+					.news-menu
+						a(href="#!") Новости компаний
+						a(href="#!").active Все
+					
+					.other-news-cards
+						//====mini-card ====
+						a(href="#!").mini-card
+							span.mini-card__date 07.06.2024
+							.h2 АО «Газпромбанк»
+							p «Газпром» и Газпромбанк договорились о работе по внедрению квантовых технологий
+						//====mini-card ====
+						a(href="#!").mini-card
+							span.mini-card__date 07.06.2024
+							.h2 АО «Газпромбанк»
+							p «Газпром» и Газпромбанк договорились о работе по внедрению квантовых технологий
+						//====mini-card ====
+						a(href="#!").mini-card
+							span.mini-card__date 07.06.2024
+							.h2 АО «Газпромбанк»
+							p «Газпром» и Газпромбанк договорились о работе по внедрению квантовых технологий
+						//====mini-card ====
+						a(href="#!").mini-card
+							span.mini-card__date 07.06.2024
+							.h2 АО «Газпромбанк»
+							p «Газпром» и Газпромбанк договорились о работе по внедрению квантовых технологий
+		
+		include ../sections/_footer.pug
+
+	
+	
+	
+block variables
+	-var title = "Page";

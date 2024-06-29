@@ -2,14 +2,13 @@
 	position: relative;
 	overflow: hidden;
 	padding-bottom: 30px;
-	.swiper-slide{
-		@media (max-width: 1199px) {
-			width: 240px!important;
-		}
-	}
+	
 	@media (max-width: 1199px) {
 		.news-swiper-nav{display: none;}
-		.news-swiper,.news-swiper-two {width: calc(50vw + 50%);}
+		
 		padding-bottom: 20px;
+	}
+	@media (max-width: 767px) {
+	.news-swiper,.news-swiper-two {width: calc(50vw + 50%);}
 	}
 }

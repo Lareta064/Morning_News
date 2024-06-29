@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 	/*NEWS SLIDER */
 	var newsSlider = new Swiper('.news-swiper', {
-		slidesPerView:1.3,
+		slidesPerView:1.2,
 		spaceBetween: 20,
 		loop: true,
-		speed: 800,
+		speed: 1000,
 		
 		 autoplay: {
 			delay: 1500,
@@ -28,10 +28,21 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 		breakpoints: {
 			580: {
-			slidesPerView: 'auto',
+			slidesPerView: 1.4,
 			spaceBetween: 20,
 			},
-			
+			600:{
+			slidesPerView: 2,
+			spaceBetween: 20,
+			},
+			768:{
+			slidesPerView: 3,
+			spaceBetween: 20,
+			},
+			992:{
+			slidesPerView: 3.5,
+			spaceBetween: 20,
+			},
 			1200:{
 				slidesPerView: 4,
 				spaceBetween: 30,
@@ -44,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		slidesPerView:1.3,
 		spaceBetween: 20,
 		loop: true,
-		speed: 800,
+		speed: 1000,
 		 autoplay: {
 			delay: 1500,
 		},
@@ -54,10 +65,21 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 		breakpoints: {
 			580: {
-			slidesPerView: 'auto',
+			slidesPerView: 1.4,
 			spaceBetween: 20,
 			},
-			
+			600:{
+			slidesPerView: 2,
+			spaceBetween: 20,
+			},
+			768:{
+			slidesPerView: 3,
+			spaceBetween: 20,
+			},
+			992:{
+			slidesPerView: 3.5,
+			spaceBetween: 20,
+			},
 			1200:{
 				slidesPerView: 4,
 				spaceBetween: 30,
@@ -69,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		slidesPerView:1.3,
 		spaceBetween: 20,
 		loop: true,
-		speed: 800,
+		speed: 1000,
 		 autoplay: {
 			delay: 1500,
 			
@@ -80,10 +102,21 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 		breakpoints: {
 			580: {
-			slidesPerView: 'auto',
+			slidesPerView: 1.4,
 			spaceBetween: 20,
 			},
-			
+			600:{
+			slidesPerView: 2,
+			spaceBetween: 20,
+			},
+			768:{
+			slidesPerView: 3,
+			spaceBetween: 20,
+			},
+			992:{
+			slidesPerView: 3.5,
+			spaceBetween: 20,
+			},
 			1200:{
 				slidesPerView: 4,
 				spaceBetween: 30,

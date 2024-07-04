@@ -2,13 +2,20 @@ extends ../layouts/layout-news.pug
 
 block content
 	.page-wrapper
+		//=====HEADER======
 		include ../sections/_header.pug
+		//=====MAIN=====
 		main.single-news-main
-			include ../sections/_single-news.pug
+			//=======HERO section ====
+			include ../sections/_single-news-hero.pug
+			//=======содержание новости ====
+			include ../sections/_single-news-content
+			//=======аннонс новости ====
+			include ../sections/_announce-news
+			//=======social-news ====
+			include ../sections/_social-news
+		//=======FOOTER ====
 		include ../sections/_footer.pug
-
-	
-	
 	
 block variables
-	-var title = "Страница категории новости";
+	-var title = "Содержание новости";

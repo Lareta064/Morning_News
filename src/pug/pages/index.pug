@@ -2,12 +2,29 @@ extends ../layouts/layout.pug
 
 block content
 	.page-wrapper
+		//======HEADER ====
 		include ../sections/_header.pug
-		include ../sections/_main.pug
-		include ../sections/_footer.pug
+		
+		//======MAIN ====
+		main.main
+			//=====NEWS SLIDER ======
+			include ../sections/_news-slider
+			//=====TOP NEWS ======
+			include ../sections/_topic-news
+			//=====SECTION RIGHT SIDEBAR =========
+			include ../sections/_right-sidebar
+			//======= NEWS SLIDER=======
+			include ../sections/_news-slider-two
 
-	
-	
+			//======= ARTICLES=======
+			include ../sections/_grid-left-column
+			//======= CARDS SLIDER=======
+			include ../sections/_cards-slider
+			//=======SECTION======
+			include ../sections/_main-page-articles
+		
+		//======FOOTER====
+		include ../sections/_footer.pug
 	
 block variables
-	-var title = "Page";
+	-var title = "Home";

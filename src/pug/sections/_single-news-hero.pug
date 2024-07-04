@@ -1,0 +1,29 @@
+//======HERO BLOCK======
+.hero
+	.container
+		.hero-content
+			h1.h1 Песков счел внутренним делом Франции победу правых на европейских выборах
+			.subtitle
+				p Роспуск Национальной ассамблеи сразу после победы правой фракции на выборах в Европарламент во Франции в Кремле считают внутренним делом французских граждан. Так пресс-секретарь президента Дмитрий Песков прокомментировал итоги выборов в Европарламент.
+			.hero-meta
+				a(href="#!").news-cat.link Мир
+				.news-date 10.06.2024, 13:25
+				
+				//=====icon view count ====
+				.news-state.flex-group
+					.icon-item
+						svg.svg-eye
+							use( href='./img/spriteSvg.svg#svg-eye')
+						span 7k
+					//=== share-component ===
+					.share-component
+						//==== share-btn =====
+						button.icon-item#share-btn
+							svg.svg-share
+								use( href='./img/spriteSvg.svg#svg-share')
+						//==== share-list =====
+						.share-list
+							script(src="https://yastatic.net/share2/share.js")
+							.ya-share2(data-curtain data-limit="5" data-shape="round"  data-services="messenger,vkontakte,odnoklassniki,telegram,twitter,viber,whatsapp,moimir,skype,tumblr,evernote,linkedin,lj,blogger,delicious,digg,reddit,pocket,qzone,renren,sinaWeibo,surfingbird")
+
+

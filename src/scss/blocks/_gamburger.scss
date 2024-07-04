@@ -8,6 +8,9 @@
 	cursor: pointer;
 	justify-content: center;
 	align-items: center;
+	&:hover{
+		opacity: .6;
+	}
 }
 .menu-toggle span {
 	position: relative;

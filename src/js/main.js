@@ -133,9 +133,24 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 	function removeActiveClass(args){
 		for(item of args){
-			
 			item.classList.remove('active');
 		}
+	}
+	/*=====SINGLE NEWS PAGE share icons===== */
+	const shareBtn = document.getElementById('share-btn');
+	const shareList = document.querySelector('.share-list');
+	const shareComponent = document.querySelector('.share-component');
+
+	if(shareBtn){
+		shareBtn.addEventListener('click', ()=>{
+			
+			if(shareBtn.classList.contains('active')){
+				removeActiveClass([shareBtn, shareList]);
+			}
+			else{
+				addActiveClass([shareBtn, shareList]);
+			}
+		})
 	}
 	/*****SEARCH FORM ***/
 	const searchForm = document.getElementById('search-form');/*  форма поиска */
@@ -178,12 +193,17 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 	
 	bodyEl.addEventListener('click', function(e){
+		
 		if(!e.target.closest('.large-menu') && !e.target.closest('.menu-toggle')){
 			removeActiveClass([burgerIcon, largeMenu, bodyEl]);
 		}
 		
 		if(!e.target.closest('#search-form') && !e.target.closest('.search-form-btn')){
 			removeActiveClass([searchForm, openSearchBtn])
+		}
+		
+		if(!e.target.closest('.share-component')){
+			removeActiveClass([shareBtn, shareList]);
 		}
 	})
 	/************* CUSTOM SELECT ************ */

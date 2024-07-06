@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--====убрать синий цвет у ссылок в сафари ========-->
+  <meta name="format-detection" content="telephone=no">
+  <!--====swiper slider ========-->
+  <link rel="stylesheet" href="./libs/swiper/swiper.min.css">
+  <!--====fancybox========-->
+  <link rel="stylesheet" href="./libs/fancybox/fancybox.css">
+  <!--====main.css========-->
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    @font-face {
+      font-family: 'InterTight';
+      src: url(./fonts/InterTight-Regular.woff2) format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'InterTight';
+      src: url(./fonts/InterTight-Medium.woff2) format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'InterTight';
+      src: url(./fonts/InterTight-SemiBold.woff2) format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'InterTight';
+      src: url(./fonts/InterTight-Bold.woff2) format("woff2");
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <!--======HEADER ====-->
+    <header class="header">
+      <!--========HEADER LARGE MENU ======-->
+      <div class="large-menu" id="large-menu">
+        <div class="header-container">
+          <nav class="large-menu-list">
+            <a href="#!">Политика</a>
+            <a href="#!">В мире</a>
+            <a href="#!">Экономика</a>
+            <a href="#!">Культура</a>
+            <a href="#!">Армия</a>
+            <a href="#!">Новости</a>
+            <a href="#!">Общество</a>
+            <a href="#!">Люди</a>
+            <a href="#!">Спорт</a>
+          </nav>
+          <!--======== SOCIAL ======-->
+          <div class="social-contacts">
+            <a href="#!">
+              <svg class="svg-tg">
+                <use href="./img/spriteSvg.svg#svg-tg"></use>
+              </svg>
+            </a>
+            <a href="#!">
+              <svg class="svg-vk">
+                <use href="./img/spriteSvg.svg#svg-vk"></use>
+              </svg>
+            </a>
+            <a href="#!">
+              <svg class="svg-ok">
+                <use href="./img/spriteSvg.svg#svg-ok"></use>
+              </svg>
+            </a>
+            <a href="#!">
+              <svg class="svg-wa">
+                <use href="./img/spriteSvg.svg#svg-wa"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--======== HEADER TOP ROW ======-->
+      <div class="header-top">
+        <div class="header-container">
+          <div class="flex-group">
+            <!--=====burger=====-->
+            <div class="menu-toggle" id="menu-toggle">
+              <span></span>
+            </div>
+            <!--=====LOGO=====-->
+            <a class="logo" href="index.html">
+              <img src="./img/logo.webp" width="160" height="40" alt="logo">
+            </a>
+          </div>
+          <div class="flex-group">
+            <!--===== CITY SELECT =====-->
+            <!--======city select =======-->
+            <div class="custom-select-wrapper">
+              <div class="custom-select">
+                <div class="custom-select__trigger">
+                  <span>Регион</span>
+                  <div class="location">
+                    <svg class="svg-pin">
+                      <use href="./img/spriteSvg.svg#svg-pin"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!--===== выпадающий список ====-->
+                <div class="custom-options">
+                  <span class="custom-option selected" data-value="Москва">Москва</span>
+                  <span class="custom-option" data-value="Саратов">Саратов</span>
+                  <span class="custom-option" data-value="Ростов">Ростов</span>
+                  <span class="custom-option" data-value="Санкт-Петербург">Санкт-Петербург</span>
+                  <span class="custom-option selected" data-value="Казань">Казань</span>
+                  <span class="custom-option selected" data-value="Москва">Москва</span>
+                  <span class="custom-option" data-value="Саратов">Саратов</span>
+                  <span class="custom-option" data-value="Ростов">Ростов</span>
+                  <span class="custom-option" data-value="Санкт-Петербург">Санкт-Петербург</span>
+                  <span class="custom-option selected" data-value="Казань">Казань</span>
+                  <span class="custom-option selected" data-value="Москва">Москва</span>
+                  <span class="custom-option" data-value="Саратов">Саратов</span>
+                  <span class="custom-option" data-value="Ростов">Ростов</span>
+                  <span class="custom-option" data-value="Санкт-Петербург">Санкт-Петербург</span>
+                  <span class="custom-option selected" data-value="Казань">Казань</span>
+                </div>
+              </div>
+            </div>
+            <!--=====SEARCH FORM =====-->
+            <div class="search-block">
+              <form class="search-form" id="search-form">
+                <input class="search-form-input" type="text">
+                <button class="search-form-btn" type="button">
+                  <svg class="svg-search">
+                    <use href="./img/spriteSvg.svg#svg-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--=======HEADER CENTER ROW =====				-->
+      <div class="header-center">
+        <div class="header-container">
+          <div class="flex-group currency-wrapper">
+            <div id="USD">$ 87,90</div>
+            <div id="EUR">€ 95,00</div>
+            <div id="CNY">&#165; 12,00</div>
+            <div id="IMOEX">IMOEX 3233,22</div>
+          </div>
+          <div class="swiper header-menu-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#!">Что посмотреть в кино</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Свежий Weekend</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Валютный прогноз</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">ПМЭФ–2024</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Свежие «Деньги»</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Что посмотреть в кино</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Свежий Weekend</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Валютный прогноз</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">ПМЭФ–2024</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Свежие «Деньги»</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Свежий Weekend</a>
+              </div>
+            </div>
+          </div>
+          <div class="header-swiper-nav">
+            <div class="swiper-button-next menu-swiper-next"></div>
+            <div class="swiper-button-prev menu-swiper-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!--====== news line=====-->
+      <div class="moving-block">
+        <div class="moving-block-row">
+          <a href="#!">Общество / 11:06 / ФАС обнаружила дорожный картель на 1,6 миллиардов рублей</a>
+          <a href="#!">Судебные приставы передали российскому военному ведомству более 190 тыс. единиц техники, изъятой у правонарушителей.</a>
+          <a href="#!">МОСКВА, 28 июня. /ТАСС/. Президент РФ Владимир Путин установил ежемесячную компенсацию, равную пенсии по выслуге лет</a>
+          <a href="#!">Общество / 11:06 / ФАС обнаружила дорожный картель на 1,6 миллиардов рублей</a>
+          <a href="#!">МОСКВА, 28 июня. /ТАСС/. Президент РФ Владимир Путин установил ежемесячную компенсацию, равную пенсии по выслуге лет</a>
+          <a href="#!">Общество / 11:06 / ФАС обнаружила дорожный картель на 1,6 миллиардов рублей</a>
+          <a href="#!">МОСКВА, 28 июня. /ТАСС/. Президент РФ Владимир Путин установил ежемесячную компенсацию, равную пенсии по выслуге лет</a>
+          <a href="#!">Общество / 11:06 / ФАС обнаружила дорожный картель на 1,6 миллиардов рублей</a>
+          <a href="#!">МОСКВА, 28 июня. /ТАСС/. Президент РФ Владимир Путин установил ежемесячную компенсацию, равную пенсии по выслуге лет</a>
+        </div>
+      </div>
+    </header>
+    <!--======MAIN ====-->
+    <main class="main">
+      <!--=====NEWS SLIDER ======-->
+      <section class="news-slider">
+        <div class="news-swiper swiper">
+          <div class="swiper-wrapper">
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Происшествия</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> БРИКС с большим плюсом</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news2.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Мир</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Масуд Пезешкиан лидирует на выборах </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news3.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Мир</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Воробьев заявил, что на месте Крокус-Сити не станут строить новый концертный зал</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news4.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Мир</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> БРИКС с большим плюсом</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news5.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Происшествия</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> В Москве заочно арестовали фигуранта уголовного дела</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Мир</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Шри-Ланка запросила у России компенсауию за погибших на СВО</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-swiper-nav">
+          <div class="swiper-button-next news-button-next"></div>
+          <div class="swiper-button-prev news-button-prev"></div>
+        </div>
+      </section>
+      <!--=====TOP NEWS ======-->
+      <section class="topic-news">
+        <div class="grid-col-2">
+          <div class="topic-news__title">
+            <a class="tag-label tag-label--accent" href="#!">Тема часа</a>
+            <a class="topic-news-link" href="#!">
+              <h2 class="h1">Дело возбуждено после нападения на главу АНО «Цифровые платформы»</h2>
+              <picture class="topic-img">
+                <source media="(max-width: 767px)" srcset="./img/topic-mob.webp">
+                <img src="./img/topic.webp" width="738" alt="img">
+              </picture>
+            </a>
+          </div>
+          <ul class="news-list">
+            <li>
+              <a href="#!">Welt: ФРГ, Италия и Испания выступают против идеи Макрона отправить военных на Украину</a>
+            </li>
+            <li>
+              <a href="#!">В Иране определили кандидатов в президенты</a>
+            </li>
+            <li>
+              <a href="#!">Гладков сообщил о 140 атаках ВСУ по Белгородской области за сутки</a>
+            </li>
+            <li>
+              <a href="#!">Школам запретили занимать больше 10% учебного времени контрольными работами</a>
+            </li>
+            <li>
+              <a href="#!">Умер зампред Совета министров РСФСР Валерий Сайкин</a>
+            </li>
+            <li>
+              <a href="#!">Байден и Макрон поддержали использование прибыли от активов РФ для нужд Украины</a>
+            </li>
+            <li>
+              <a href="#!">WSJ: Египет и Катар пригрозили выслать лидеров «Хамаса» для сделки с Израилем</a>
+            </li>
+            <li>
+              <a href="#!">ТАСС: в отношении Аскерова могут возбудить дело за нарушение закона об иноагентах</a>
+            </li>
+            <li>
+              <a href="#!">Что происходит после ввода войск России на Украину. День 837-й</a>
+            </li>
+            <li>
+              <a href="#!">Началось строительство первой высокоскоростной железнодорожной магистрали в России</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--=====SECTION RIGHT SIDEBAR =========-->
+      <section class="aside-right articles">
+        <!--======LARGE LEFT COLUMN======-->
+        <div class="aside-right__content">
+          <div class="articles-block">
+            <a class="article-cat" href="single-category.html">Главное</a>
+            <article class="article">
+              <div class="news-card news-card--large">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/img1.webp" width="440" height="250" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Происшествия</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Миражи Эмманюэля Макрона</div>
+                    <p>Президент Франции пообещал вывести военную поддержку Украине на новый уровень</p>
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="grid-col-3 article">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Происшествия</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Продюсерская работа</div>
+                    <p>За убийство Игоря Талькова заочно ответит Валерий Шляфман</p>
+                  </a>
+                </div>
+              </div>
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Мир</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> БРИКС с большим плюсом</div>
+                    <p>Ведущее объединение незападного мира не в состоянии принять всех желающих</p>
+                  </a>
+                </div>
+              </div>
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Мир</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Сербов всех стран зовут соединяться</div>
+                    <p>Всесербский собор не поддержал «боснийский развод»</p>
+                  </a>
+                </div>
+              </div>
+              <!--======= краткие карточки без картинки =====-->
+              <div class="news-card news-card--short">
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Происшествия</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Беспорядки дошли до суда</div>
+                    <p>Дело о погроме в махачкалинском аэропорту рассмотрят в Армавире</p>
+                  </a>
+                </div>
+              </div>
+              <div class="news-card news-card--short">
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Спорт</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Укротитель бросков</div>
+                    <p>Благодаря голкиперу Сергею Бобровскому «Флорида» начала финальную серию Кубка Стэнли с победы</p>
+                  </a>
+                </div>
+              </div>
+              <div class="news-card news-card--short">
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Мир</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Евроремонт по-французски</div>
+                    <p>Начались выборы в Европейский парламент</p>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--======RIGHT COLUMN ======-->
+        <div class="aside-right__sidebar">
+          <article class="article">
+            <a class="article-cat" href="#">Частное мнение</a>
+            <div class="article-content">
+              <div class="news-card  news-card--long">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news.webp" width="225" height="225" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Происшествия</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Сербов всех стран зовут соединяться</div>
+                    <p>Всесербский собор не поддержал «боснийский развод»</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="card-list">
+              <a class="article-cat" href="#">Самое читаемое</a>
+              <a class="card-list__img zoom-img" href="single-news.html">
+                <img src="./img/read-news.webp" width="290" height="170" alt="img">
+              </a>
+              <ol class="card-list__body">
+                <li>
+                  <div class="icon-item">
+                    <span>70719</span>
+                    <svg class="svg-eye">
+                      <use href="./img/spriteSvg.svg#svg-eye"></use>
+                    </svg>
+                  </div>
+                  <a href="single-news.html">Глашатай истин роковых</a>
+                </li>
+                <li>
+                  <div class="icon-item">
+                    <span>70719</span>
+                    <svg class="svg-eye">
+                      <use href="./img/spriteSvg.svg#svg-eye"></use>
+                    </svg>
+                  </div>
+                  <a href="#!">ЦКАД ведет в колонию</a>
+                </li>
+                <li>
+                  <div class="icon-item">
+                    <span>70719</span>
+                    <svg class="svg-eye">
+                      <use href="./img/spriteSvg.svg#svg-eye"></use>
+                    </svg>
+                  </div>
+                  <a href="#!">При дворе их звали Настенька и Трина</a>
+                </li>
+                <li>
+                  <div class="icon-item">
+                    <span>70719</span>
+                    <svg class="svg-eye">
+                      <use href="./img/spriteSvg.svg#svg-eye"></use>
+                    </svg>
+                  </div>
+                  <a href="#!"> Город, сделанный из древнерусского</a>
+                </li>
+                <li>
+                  <div class="icon-item">
+                    <span>70719</span>
+                    <svg class="svg-eye">
+                      <use href="./img/spriteSvg.svg#svg-eye"></use>
+                    </svg>
+                  </div>
+                  <a href="#!"> «Плесень старого чиновничества покрыла наши учреждения»</a>
+                </li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!--======= NEWS SLIDER=======-->
+      <section class="news-slider article">
+        <div class="flex-header">
+          <a class="article-cat" href="#">Мультимедиа</a>
+          <div class="tabs-btns">
+            <button class="tab-btn active">Фото</button>
+            <button class="tab-btn">Видео</button>
+            <button class="tab-btn">Спецпроекты</button>
+            <button class="tab-btn">Подкасты</button>
+            <button class="tab-btn">Наглядно</button>
+          </div>
+        </div>
+        <div class="news-swiper-two swiper">
+          <div class="swiper-wrapper">
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news-slider1.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Наглядно</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Все вокруг искрится</div>
+                    <p>Главные машины ПМЭФ-2024</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news-slider2.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Фотогалерея</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Лица ПМЭФ-2024</div>
+                    <p>Участники и гости форума</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news-slider1.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Наглядно</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Все вокруг искрится</div>
+                    <p>Главные машины ПМЭФ-2024</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news-slider2.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Наглядно</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Все вокруг искрится</div>
+                    <p>Главные машины ПМЭФ-2024</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news-slider1.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Наглядно</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Все вокруг искрится</div>
+                    <p>Главные машины ПМЭФ-2024</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news-slider2.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Наглядно</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Все вокруг искрится</div>
+                    <p>Главные машины ПМЭФ-2024</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-swiper-nav">
+          <div class="swiper-button-next news-button-next-two"></div>
+          <div class="swiper-button-prev news-button-prev-two"></div>
+        </div>
+      </section>
+      <!--======= ARTICLES=======-->
+      <section class="aside-right aside-right--special articles">
+        <!--======LARGE LEFT COLUMN======-->
+        <div class="aside-right__content">
+          <!--====== БЛОК КАРТОЧЕК КАТЕГОРИИ =====-->
+          <div class="articles-block">
+            <a class="article-cat" href="#">Главное</a>
+            <article class="article grid-special">
+              <!--==== одна полная карточка слева ====-->
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/read-news.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html"></a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Ястреб в отпуске</div>
+                    <p>ЦБ подождет с повышением ставки до конца июля, когда это может и не понадобиться</p>
+                  </a>
+                </div>
+              </div>
+              <!--===сетка с короткими карточками по 2 в ряду ====-->
+              <div class="grid-col-2">
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!--====== БЛОК КАРТОЧЕК КАТЕГОРИИ =====-->
+          <div class="articles-block">
+            <a class="article-cat" href="#">Экономика</a>
+            <article class="article grid-special">
+              <!--==== одна полная карточка слева ====-->
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news2.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html"></a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Ястреб в отпуске</div>
+                    <p>ЦБ подождет с повышением ставки до конца июля, когда это может и не понадобиться</p>
+                  </a>
+                </div>
+              </div>
+              <!--===сетка с короткими карточками по 2 в ряду ====-->
+              <div class="grid-col-2">
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!--====== БЛОК КАРТОЧЕК КАТЕГОРИИ =====-->
+          <div class="articles-block">
+            <a class="article-cat" href="#">Армия</a>
+            <article class="article grid-special">
+              <!--==== одна полная карточка слева ====-->
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news3.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html"></a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Ястреб в отпуске</div>
+                    <p>ЦБ подождет с повышением ставки до конца июля, когда это может и не понадобиться</p>
+                  </a>
+                </div>
+              </div>
+              <!--===сетка с короткими карточками по 2 в ряду ====-->
+              <div class="grid-col-2">
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!--======= CARDS SLIDER=======-->
+      <section class="news-slider">
+        <div class="cards-swiper swiper">
+          <div class="swiper-wrapper">
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card news-card--special">
+                <div class="news-card__img">
+                  <img src="./img/card-slider1.webp" width="240" height="135" alt="alt" />
+                </div>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Партнерский проект</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Искусство цифровизации партнеров</div>
+                    <p>Как передовые технологии улучшают организацию деловых поездок</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card news-card--special">
+                <div class="news-card__img">
+                  <img src="./img/card-slider2.webp" width="240" height="135" alt="alt" />
+                </div>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Партнерский проект</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Исполнить мечту и защитить будущее</div>
+                    <p>Как «CберCтрахование жизни» помогает исполнять желания</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card news-card--special">
+                <div class="news-card__img">
+                  <img src="./img/card-slider3.webp" width="240" height="135" alt="alt" />
+                </div>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Партнерский проект</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Искусство цифровизации партнеров</div>
+                    <p>Как передовые технологии улучшают организацию деловых поездок</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card news-card--special">
+                <div class="news-card__img">
+                  <img src="./img/card-slider4.webp" width="240" height="135" alt="alt" />
+                </div>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Партнерский проект</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Исполнить мечту и защитить будущее</div>
+                    <p>Как «CберCтрахование жизни» помогает исполнять желания</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card news-card--special">
+                <div class="news-card__img">
+                  <img src="./img/card-slider1.webp" width="240" height="135" alt="alt" />
+                </div>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Партнерский проект</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Искусство цифровизации партнеров</div>
+                    <p>Как передовые технологии улучшают организацию деловых поездок</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--===single-slide=====-->
+            <div class="swiper-slide">
+              <div class="news-card news-card--special">
+                <div class="news-card__img">
+                  <img src="./img/card-slider2.webp" width="240" height="135" alt="alt" />
+                </div>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html">Партнерский проект</a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Исполнить мечту и защитить будущее</div>
+                    <p>Как «CберCтрахование жизни» помогает исполнять желания</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-swiper-nav">
+          <div class="swiper-button-next cards-swiper-next"></div>
+          <div class="swiper-button-prev cards-swiper-prev"></div>
+        </div>
+      </section>
+      <!--=======SECTION======-->
+      <section class="aside-right aside-right--special articles">
+        <!--======LARGE LEFT COLUMN======-->
+        <div class="aside-right__content">
+          <!--====== БЛОК КАРТОЧЕК КАТЕГОРИИ =====-->
+          <div class="articles-block">
+            <a class="article-cat" href="#">Общество</a>
+            <article class="article grid-special">
+              <!--==== одна полная карточка слева ====-->
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news3.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html"></a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Ястреб в отпуске</div>
+                    <p>ЦБ подождет с повышением ставки до конца июля, когда это может и не понадобиться</p>
+                  </a>
+                </div>
+              </div>
+              <!--===сетка с короткими карточками по 2 в ряду ====-->
+              <div class="grid-col-2">
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!--====== БЛОК КАРТОЧЕК КАТЕГОРИИ =====-->
+          <div class="articles-block">
+            <a class="article-cat" href="#">Спорт</a>
+            <article class="article grid-special">
+              <!--==== одна полная карточка слева ====-->
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news4.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html"></a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Ястреб в отпуске</div>
+                    <p>ЦБ подождет с повышением ставки до конца июля, когда это может и не понадобиться</p>
+                  </a>
+                </div>
+              </div>
+              <!--===сетка с короткими карточками по 2 в ряду ====-->
+              <div class="grid-col-2">
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!--====== БЛОК КАРТОЧЕК КАТЕГОРИИ =====-->
+          <div class="articles-block">
+            <a class="article-cat" href="#">В мире</a>
+            <article class="article grid-special">
+              <!--==== одна полная карточка слева ====-->
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news5.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html"></a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Ястреб в отпуске</div>
+                    <p>ЦБ подождет с повышением ставки до конца июля, когда это может и не понадобиться</p>
+                  </a>
+                </div>
+              </div>
+              <!--===сетка с короткими карточками по 2 в ряду ====-->
+              <div class="grid-col-2">
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!--====== БЛОК КАРТОЧЕК КАТЕГОРИИ =====-->
+          <div class="articles-block">
+            <a class="article-cat" href="#">Культура</a>
+            <article class="article grid-special">
+              <!--==== одна полная карточка слева ====-->
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news6.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html"></a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Ястреб в отпуске</div>
+                    <p>ЦБ подождет с повышением ставки до конца июля, когда это может и не понадобиться</p>
+                  </a>
+                </div>
+              </div>
+              <!--===сетка с короткими карточками по 2 в ряду ====-->
+              <div class="grid-col-2">
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!--====== БЛОК КАРТОЧЕК КАТЕГОРИИ =====-->
+          <div class="articles-block">
+            <a class="article-cat" href="#">Новости</a>
+            <article class="article grid-special">
+              <!--==== одна полная карточка слева ====-->
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news7.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html"></a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Ястреб в отпуске</div>
+                    <p>ЦБ подождет с повышением ставки до конца июля, когда это может и не понадобиться</p>
+                  </a>
+                </div>
+              </div>
+              <!--===сетка с короткими карточками по 2 в ряду ====-->
+              <div class="grid-col-2">
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!--====== БЛОК КАРТОЧЕК КАТЕГОРИИ =====-->
+          <div class="articles-block">
+            <a class="article-cat" href="#">Люди</a>
+            <article class="article grid-special">
+              <!--==== одна полная карточка слева ====-->
+              <div class="news-card">
+                <a class="news-card__img" href="single-news.html">
+                  <img src="./img/news8.webp" width="240" height="135" alt="alt" />
+                </a>
+                <div class="news-card__body">
+                  <a class="news-card__cat" href="single-category.html"></a>
+                  <a class="news-card__link" href="single-news.html">
+                    <div class="news-card__title"> Ястреб в отпуске</div>
+                    <p>ЦБ подождет с повышением ставки до конца июля, когда это может и не понадобиться</p>
+                  </a>
+                </div>
+              </div>
+              <!--===сетка с короткими карточками по 2 в ряду ====-->
+              <div class="grid-col-2">
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> В забой идут одни старики</div>
+                      <p>Индексация пенсий работающим пенсионерам призвана увеличить их число на рынке труда</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="news-card news-card--short">
+                  <div class="news-card__body">
+                    <a class="news-card__cat" href="single-category.html"></a>
+                    <a class="news-card__link" href="single-news.html">
+                      <div class="news-card__title"> Традиционным ценностям ищут дом</div>
+                      <p>На ПМЭФ обсудили, как построить государство благодаря семье и семью благодаря государству</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--======FOOTER====-->
+    <footer class="footer">
+      <div class="footer-menu-wrapper flex-group">
+        <nav class="footer-menu">
+          <a href="#!">О нас</a>
+          <a href="#!">Архив</a>
+          <a href="#!">Контакты</a>
+          <a href="#!">Реклама</a>
+          <a href="#!">Вакансии</a>
+          <a href="#!">Android</a>
+          <a href="#!">Обратная связь</a>
+          <a href="#!">Правовая информация</a>
+          <a href="#!">E-mail рассылки</a>
+        </nav>
+      </div>
+      <!--======== SOCIAL ======-->
+      <div class="social-contacts">
+        <a href="#!">
+          <svg class="svg-tg">
+            <use href="./img/spriteSvg.svg#svg-tg"></use>
+          </svg>
+        </a>
+        <a href="#!">
+          <svg class="svg-vk">
+            <use href="./img/spriteSvg.svg#svg-vk"></use>
+          </svg>
+        </a>
+        <a href="#!">
+          <svg class="svg-ok">
+            <use href="./img/spriteSvg.svg#svg-ok"></use>
+          </svg>
+        </a>
+        <a href="#!">
+          <svg class="svg-wa">
+            <use href="./img/spriteSvg.svg#svg-wa"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <!--====swiper slider ========-->
+  <script src="./libs/swiper/swiper.js"></script>
+  <!--====fancybox ========-->
+  <script src="./libs/fancybox/fancybox.js"> </script>
+  <!--========header search form ======-->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

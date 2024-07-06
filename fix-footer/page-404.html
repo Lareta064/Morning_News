@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--====убрать синий цвет у ссылок в сафари ========-->
+  <meta name="format-detection" content="telephone=no">
+  <!--====swiper slider ========-->
+  <link rel="stylesheet" href="./libs/swiper/swiper.min.css">
+  <!--====fancybox========-->
+  <link rel="stylesheet" href="./libs/fancybox/fancybox.css">
+  <!--====main.css========-->
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    @font-face {
+      font-family: 'InterTight';
+      src: url(./fonts/InterTight-Regular.woff2) format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'InterTight';
+      src: url(./fonts/InterTight-Medium.woff2) format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'InterTight';
+      src: url(./fonts/InterTight-SemiBold.woff2) format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'InterTight';
+      src: url(./fonts/InterTight-Bold.woff2) format("woff2");
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+  <title>Page</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <!--========HEADER LARGE MENU ======-->
+      <div class="large-menu" id="large-menu">
+        <div class="header-container">
+          <nav class="large-menu-list">
+            <a href="#!">Политика</a>
+            <a href="#!">В мире</a>
+            <a href="#!">Экономика</a>
+            <a href="#!">Культура</a>
+            <a href="#!">Армия</a>
+            <a href="#!">Новости</a>
+            <a href="#!">Общество</a>
+            <a href="#!">Люди</a>
+            <a href="#!">Спорт</a>
+          </nav>
+          <!--======== SOCIAL ======-->
+          <div class="social-contacts">
+            <a href="#!">
+              <svg class="svg-tg">
+                <use href="./img/spriteSvg.svg#svg-tg"></use>
+              </svg>
+            </a>
+            <a href="#!">
+              <svg class="svg-vk">
+                <use href="./img/spriteSvg.svg#svg-vk"></use>
+              </svg>
+            </a>
+            <a href="#!">
+              <svg class="svg-ok">
+                <use href="./img/spriteSvg.svg#svg-ok"></use>
+              </svg>
+            </a>
+            <a href="#!">
+              <svg class="svg-wa">
+                <use href="./img/spriteSvg.svg#svg-wa"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--======== HEADER TOP ROW ======-->
+      <div class="header-top">
+        <div class="header-container">
+          <div class="flex-group">
+            <!--=====burger=====-->
+            <div class="menu-toggle" id="menu-toggle">
+              <span></span>
+            </div>
+            <!--=====LOGO=====-->
+            <a class="logo" href="index.html">
+              <img src="./img/logo.webp" width="160" height="40" alt="logo">
+            </a>
+          </div>
+          <div class="flex-group">
+            <!--===== CITY SELECT =====-->
+            <!--======city select =======-->
+            <div class="custom-select-wrapper">
+              <div class="custom-select">
+                <div class="custom-select__trigger">
+                  <span>Регион</span>
+                  <div class="location">
+                    <svg class="svg-pin">
+                      <use href="./img/spriteSvg.svg#svg-pin"></use>
+                    </svg>
+                  </div>
+                </div>
+                <!--===== выпадающий список ====-->
+                <div class="custom-options">
+                  <span class="custom-option selected" data-value="Москва">Москва</span>
+                  <span class="custom-option" data-value="Саратов">Саратов</span>
+                  <span class="custom-option" data-value="Ростов">Ростов</span>
+                  <span class="custom-option" data-value="Санкт-Петербург">Санкт-Петербург</span>
+                  <span class="custom-option selected" data-value="Казань">Казань</span>
+                  <span class="custom-option selected" data-value="Москва">Москва</span>
+                  <span class="custom-option" data-value="Саратов">Саратов</span>
+                  <span class="custom-option" data-value="Ростов">Ростов</span>
+                  <span class="custom-option" data-value="Санкт-Петербург">Санкт-Петербург</span>
+                  <span class="custom-option selected" data-value="Казань">Казань</span>
+                  <span class="custom-option selected" data-value="Москва">Москва</span>
+                  <span class="custom-option" data-value="Саратов">Саратов</span>
+                  <span class="custom-option" data-value="Ростов">Ростов</span>
+                  <span class="custom-option" data-value="Санкт-Петербург">Санкт-Петербург</span>
+                  <span class="custom-option selected" data-value="Казань">Казань</span>
+                </div>
+              </div>
+            </div>
+            <!--=====SEARCH FORM =====-->
+            <div class="search-block">
+              <form class="search-form" id="search-form">
+                <input class="search-form-input" type="text">
+                <button class="search-form-btn" type="button">
+                  <svg class="svg-search">
+                    <use href="./img/spriteSvg.svg#svg-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--=======HEADER CENTER ROW =====				-->
+      <div class="header-center">
+        <div class="header-container">
+          <div class="flex-group currency-wrapper">
+            <div id="USD">$ 87,90</div>
+            <div id="EUR">€ 95,00</div>
+            <div id="CNY">&#165; 12,00</div>
+            <div id="IMOEX">IMOEX 3233,22</div>
+          </div>
+          <div class="swiper header-menu-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#!">Что посмотреть в кино</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Свежий Weekend</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Валютный прогноз</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">ПМЭФ–2024</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Свежие «Деньги»</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Что посмотреть в кино</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Свежий Weekend</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Валютный прогноз</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">ПМЭФ–2024</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Свежие «Деньги»</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#!">Свежий Weekend</a>
+              </div>
+            </div>
+          </div>
+          <div class="header-swiper-nav">
+            <div class="swiper-button-next menu-swiper-next"></div>
+            <div class="swiper-button-prev menu-swiper-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!--====== news line=====-->
+      <div class="moving-block">
+        <div class="moving-block-row">
+          <a href="#!">Общество / 11:06 / ФАС обнаружила дорожный картель на 1,6 миллиардов рублей</a>
+          <a href="#!">Судебные приставы передали российскому военному ведомству более 190 тыс. единиц техники, изъятой у правонарушителей.</a>
+          <a href="#!">МОСКВА, 28 июня. /ТАСС/. Президент РФ Владимир Путин установил ежемесячную компенсацию, равную пенсии по выслуге лет</a>
+          <a href="#!">Общество / 11:06 / ФАС обнаружила дорожный картель на 1,6 миллиардов рублей</a>
+          <a href="#!">МОСКВА, 28 июня. /ТАСС/. Президент РФ Владимир Путин установил ежемесячную компенсацию, равную пенсии по выслуге лет</a>
+          <a href="#!">Общество / 11:06 / ФАС обнаружила дорожный картель на 1,6 миллиардов рублей</a>
+          <a href="#!">МОСКВА, 28 июня. /ТАСС/. Президент РФ Владимир Путин установил ежемесячную компенсацию, равную пенсии по выслуге лет</a>
+          <a href="#!">Общество / 11:06 / ФАС обнаружила дорожный картель на 1,6 миллиардов рублей</a>
+          <a href="#!">МОСКВА, 28 июня. /ТАСС/. Президент РФ Владимир Путин установил ежемесячную компенсацию, равную пенсии по выслуге лет</a>
+        </div>
+      </div>
+    </header>
+    <main class="page-404">
+      <section class="page-404__content">
+        <div class="label-404">
+          <svg class="svg-404">
+            <use href="./img/spriteSvg.svg#svg-404"></use>
+          </svg>
+        </div>
+        <h1 class="h1">Запрошенная вами стра&shy;ница не существует или недоступна в данный момент.</h1>
+        <!--=======block=====-->
+        <div class="page-404__block">
+          <ul class="news-list">
+            <li>Возможно, она была перемещена либо проводится ее обновление;</li>
+            <li>Возможно, вы ошиблись при наборе адреса страницы;</li>
+            <li>Если вы уверены в правильности адреса и считаете, что ошибка произошла по нашей вине, пожалуйста, сообщите об этом.</li>
+          </ul>
+        </div>
+        <!--=======block=====-->
+        <div class="page-404__block">
+          <div class="title-20">Также вы можете:</div>
+          <ul class="news-list">
+            <li>Воспользоваться <a class="link" href="#!">расширенным поиском</a> по сайту;</li>
+            <li>Вернуться на предыдущую страницу при помощи кнопки браузера «назад»;</li>
+            <li>Перейти на <a class="link" href="index.html">главную страницу</a> сайта.</li>
+          </ul>
+        </div>
+      </section>
+      <!--======ДРУГИЕ НОВОСТИ ===-->
+      <section class="other-news">
+        <div class="other-news-wrapper">
+          <div class="news-menu">
+            <a href="#!">Новости компаний</a>
+            <a class="active" href="#!">Все</a>
+          </div>
+          <div class="other-news-cards">
+            <!--====mini-card ====-->
+            <a class="mini-card" href="#!">
+              <span class="mini-card__date">07.06.2024</span>
+              <div class="h2">АО «Газпромбанк»</div>
+              <p>«Газпром» и Газпромбанк договорились о работе по внедрению квантовых технологий</p>
+            </a>
+            <!--====mini-card ====-->
+            <a class="mini-card" href="#!">
+              <span class="mini-card__date">07.06.2024</span>
+              <div class="h2">АО «Газпромбанк»</div>
+              <p>«Газпром» и Газпромбанк договорились о работе по внедрению квантовых технологий</p>
+            </a>
+            <!--====mini-card ====-->
+            <a class="mini-card" href="#!">
+              <span class="mini-card__date">07.06.2024</span>
+              <div class="h2">АО «Газпромбанк»</div>
+              <p>«Газпром» и Газпромбанк договорились о работе по внедрению квантовых технологий</p>
+            </a>
+            <!--====mini-card ====-->
+            <a class="mini-card" href="#!">
+              <span class="mini-card__date">07.06.2024</span>
+              <div class="h2">АО «Газпромбанк»</div>
+              <p>«Газпром» и Газпромбанк договорились о работе по внедрению квантовых технологий</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--======FOOTER ===-->
+    <footer class="footer">
+      <div class="footer-menu-wrapper flex-group">
+        <nav class="footer-menu">
+          <a href="#!">О нас</a>
+          <a href="#!">Архив</a>
+          <a href="#!">Контакты</a>
+          <a href="#!">Реклама</a>
+          <a href="#!">Вакансии</a>
+          <a href="#!">Android</a>
+          <a href="#!">Обратная связь</a>
+          <a href="#!">Правовая информация</a>
+          <a href="#!">E-mail рассылки</a>
+        </nav>
+      </div>
+      <!--======== SOCIAL ======-->
+      <div class="social-contacts">
+        <a href="#!">
+          <svg class="svg-tg">
+            <use href="./img/spriteSvg.svg#svg-tg"></use>
+          </svg>
+        </a>
+        <a href="#!">
+          <svg class="svg-vk">
+            <use href="./img/spriteSvg.svg#svg-vk"></use>
+          </svg>
+        </a>
+        <a href="#!">
+          <svg class="svg-ok">
+            <use href="./img/spriteSvg.svg#svg-ok"></use>
+          </svg>
+        </a>
+        <a href="#!">
+          <svg class="svg-wa">
+            <use href="./img/spriteSvg.svg#svg-wa"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <!--====swiper slider ========-->
+  <script src="./libs/swiper/swiper.js"></script>
+  <!--====fancybox ========-->
+  <script src="./libs/fancybox/fancybox.js"> </script>
+  <!--========header search form ======-->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

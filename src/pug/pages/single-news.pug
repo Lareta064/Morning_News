@@ -8,12 +8,17 @@ block content
 		main.single-news-main
 			//=======HERO section ====
 			include ../sections/_single-news-hero.pug
-			//=======содержание новости ====
-			include ../sections/_single-news-content
-			//=======аннонс новости ====
-			include ../sections/_announce-news
-			//=======social-news ====
-			include ../sections/_social-news
+			section.aside-right
+				.aside-right__content
+					include ../sections/_single-news-content
+					//=======содержание новости ====
+					//- include ../sections/_single-news-content
+					//=======аннонс новости ====
+					//- include ../sections/_announce-news
+					//=======social-news ====
+					//- include ../sections/_social-news
+				.aside-right__sidebar
+					h1 Right
 		//=======FOOTER ====
 		include ../sections/_footer.pug
 	

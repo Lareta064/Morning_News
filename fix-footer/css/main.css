@@ -560,7 +560,9 @@ a.h2:hover {
   grid-template-columns: 1fr 240px;
   gap: 40px;
 }
-
+.aside-right__content{
+  max-width: 800px;
+}
 .grid-col-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

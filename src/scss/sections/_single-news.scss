@@ -11,6 +11,11 @@
 		padding-left: 15px;
 		border-left: 1px solid #eeeeee;
 	}
+	.aside-right{
+		@media (max-width: 1199px) {
+		display: block;
+		}
+	}
 }
 .hero{
 	position: relative;

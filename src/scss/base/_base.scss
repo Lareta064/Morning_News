@@ -168,6 +168,10 @@ section{
     padding: 15px 20px;
   }
 }
+.aside-right section{
+  width: 100%;
+  padding: 20px 0;
+}
   .zoom-img {
     overflow: hidden;
 
@@ -189,6 +193,11 @@ section{
   padding-top: 30px;
   @media (max-width: 767px) {
   padding-top: 20px;
+  }
+}
+.hide-tablet{
+  @media (max-width: 1199px) {
+  display: none!important;
   }
 }
 .pt-40 {

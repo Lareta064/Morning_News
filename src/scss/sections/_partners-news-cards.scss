@@ -1,0 +1,17 @@
+.addition-cards{
+	padding-block: 20px;
+}
+.addition-cards.grid-col-3{
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+	}
+}
+.aside-right__sidebar{
+	&>*+*{margin-top: 30px;}
+}
+.aside-right__sidebar .news-card +.news-card{
+		margin-top: 30px;
+	}
+ .aside-article-content{
+	padding-top: 5px;
+ }

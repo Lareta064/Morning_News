@@ -7,7 +7,10 @@
 		&:last-child {padding-bottom: 30px;}
 		}
 	}
-	
+	.aside-right__sidebar{
+		padding-left: 15px;
+		border-left: 1px solid #eeeeee;
+	}
 }
 .hero{
 	position: relative;

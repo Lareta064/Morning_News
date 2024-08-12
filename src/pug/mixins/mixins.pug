@@ -40,5 +40,15 @@ mixin news-card-special(img, cat, title, txt,  w ='240', h ='135')
 				.news-card__title  #{title}
 				if  txt
 					p !{txt}
-
+mixin news-card-additional(img, cat, title, txt,  w ='240', h ='160')
+	a(href="single-news.html").news-card.news-card-preview
+		if img !==''
+			.news-card__img
+				img(src="./img/" + img + ".webp",   width=""+ w height=""+ h alt="alt" )
+		.news-card__body
+			span.tag-label #{cat}
+			.news-card__link
+				.news-card__title  #{title}
+				if  txt
+					p !{txt}
 				

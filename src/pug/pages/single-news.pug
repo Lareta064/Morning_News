@@ -10,15 +10,35 @@ block content
 			include ../sections/_single-news-hero.pug
 			section.aside-right
 				.aside-right__content
-					include ../sections/_single-news-content
 					//=======содержание новости ====
-					//- include ../sections/_single-news-content
+					include ../sections/_single-news-content
 					//=======аннонс новости ====
-					//- include ../sections/_announce-news
+					include ../sections/_announce-news
 					//=======social-news ====
-					//- include ../sections/_social-news
+					include ../sections/_social-news
+					//=======partners-news-cards ====
+					include ../sections/_partners-news-cards
 				.aside-right__sidebar
-					h1 Right
+					.aside-article
+						h2.border-header Самое читаемое
+						
+						+news-card('read-news', '', 'Глашатай истин роковых',  'Это внутреннее дело Французской республики... Если я правильно помню, это не является новацией в политических технологиях Французской республики.', '120', '70')(class="news-card--mini")
+						+news-card('read-news', '', 'Глашатай истин роковых',  'Это внутреннее дело Французской республики... Если я правильно помню, это не является новацией в политических технологиях Французской республики.', '120', '70')(class="news-card--mini")
+						+news-card('read-news', '', 'Глашатай истин роковых',  'Это внутреннее дело Французской республики... Если я правильно помню, это не является новацией в политических технологиях Французской республики.', '120', '70')(class="news-card--mini")
+
+					.aside-article
+						h2.border-header Новости экономики 
+						
+						+news-card('news2', '', 'Ястреб в отпуске',  'ЦБ подождет с повышением ставки до конца июля, когда это может и не понадобиться', '120', '70')(class="news-card--mini")
+						+news-card('news2', '', 'Ястреб в отпуске',  'ЦБ подождет с повышением ставки до конца июля, когда это может и не понадобиться', '120', '70')(class="news-card--mini")
+					.aside-article
+						+news-card('partners-news', '', 'Тренер «Рубина» Рахимов отреагировал на ничью с «Ростовом»',  '', '225', '160')(class="news-card--midi")
+						+news-card('partners-news', '', 'Тренер «Рубина» Рахимов отреагировал на ничью с «Ростовом»',  '', '225', '160')(class="news-card--midi")
+
+						+news-card('partners-news', '', 'Тренер «Рубина» Рахимов отреагировал на ничью с «Ростовом»',  '', '225', '160')(class="news-card--midi")
+
+
+					
 		//=======FOOTER ====
 		include ../sections/_footer.pug
 	

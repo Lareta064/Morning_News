@@ -85,7 +85,7 @@
 	justify-content: center;
 	background-color: var(--bodyBg);
 	position: relative;
-	.swiper-slide{display: flex;}
+	.swiper-slide{display: flex; justify-content: center;}
 	.gallery-pagination{
 		position: absolute;
 		padding-right: 30px;
@@ -119,7 +119,7 @@
 		right:15px;
 		z-index: 2;
 	}
-	img{border-radius: 0;}
+	img{border-radius: 0; max-width: 550px;}
 	 .news-gallery{
 		width: min(730px, 100%);
 		@media (max-width: 1023px) {

@@ -4,7 +4,8 @@ mixin news-card(img, cat, title, txt,  w ='240', h ='135')
 			a(href="single-news.html").news-card__img
 				img(src="./img/"+ img +".webp", width=""+ w height=""+ h alt="alt")
 		.news-card__body
-			a(href="single-category.html").news-card__cat #{cat}
+			if cat !=''
+				a(href="single-category.html").news-card__cat #{cat}
 			a(href="single-news.html").news-card__link
 				.news-card__title  #{title}
 				if  txt

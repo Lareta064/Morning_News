@@ -52,4 +52,16 @@ mixin news-card-additional(img, cat, title, txt,  w ='240', h ='160')
 				.news-card__title  #{title}
 				if  txt
 					p !{txt}
-				
+
+mixin news-card-aside(img, cat, title, txt,  w ='240', h ='135')
+	a(href="single-news.html").news-card&attributes(attributes)
+		if img !==''
+			.news-card__img
+				img(src="./img/"+ img +".webp", width=""+ w height=""+ h alt="alt")
+		.news-card__body
+			if cat !=''
+				a(href="single-category.html").news-card__cat #{cat}
+			.news-card__link
+				.news-card__title  #{title}
+				if  txt
+					p !{txt}

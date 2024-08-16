@@ -1,5 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const bodyEl = document.body;
+	const backTop = document.querySelector('#backtop');
+	if(backTop){
+		window.addEventListener('scroll', ()=>{
+			if(window.scrollY > 500){
+				 backTop.classList.add('active');
+			}
+			else{
+				backTop.classList.remove('active');
+			}
+		});
+	}
 	/* HEADER MENU SLIDER */
 	var headerMenuSlider = new Swiper('.header-menu-swiper', {
 		slidesPerView: 'auto',
